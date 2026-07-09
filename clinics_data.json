@@ -1,0 +1,2047 @@
+[
+  {
+    "id": "clinic-10",
+    "name": "MedPlus Healthcare Centre - Yeshwanthpur",
+    "category": "allopathy",
+    "area": "Yeshwanthpur",
+    "address": "9 Main Road, Yeshwanthpur, Bengaluru, KA 560057",
+    "phone": "+91 80 4967 8108",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.2,
+    "reviewCount": 186,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 13.03149874572968,
+    "lng": 77.54229311473979,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54229311473979!3d13.03149874572968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-1",
+    "name": "PrimeCare Healthcare Centre - Whitefield",
+    "category": "allopathy",
+    "area": "Whitefield",
+    "address": "38 Main Road, Whitefield, Bengaluru, KA 560059",
+    "phone": "+91 80 4967 1282",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.3,
+    "reviewCount": 197,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 12.972027832437004,
+    "lng": 77.74655441082076,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.74655441082076!3d12.972027832437004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Whitefield Bengaluru"
+  },
+  {
+    "id": "clinic-17",
+    "name": "Dr. Nair's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Domlur",
+    "address": "88 Main Road, Domlur, Bengaluru, KA 560066",
+    "phone": "+91 80 4967 5914",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.7,
+    "reviewCount": 48,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 12.962972317458815,
+    "lng": 77.63995286835376,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63995286835376!3d12.962972317458815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Domlur Bengaluru"
+  },
+  {
+    "id": "clinic-39",
+    "name": "Kottakkal Ayurveda - Electronic City",
+    "category": "ayurveda",
+    "area": "Electronic City",
+    "address": "24 Main Road, Electronic City, Bengaluru, KA 560043",
+    "phone": "+91 80 4967 5192",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.3,
+    "reviewCount": 160,
+    "reviews": [
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit."
+    ],
+    "lat": 12.84228271131037,
+    "lng": 77.65929548865189,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.65929548865189!3d12.84228271131037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-46",
+    "name": "Kottakkal Ayurveda - Hebbal",
+    "category": "ayurveda",
+    "area": "Hebbal",
+    "address": "100 Main Road, Hebbal, Bengaluru, KA 560060",
+    "phone": "+91 80 4967 9063",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 231,
+    "reviews": [
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit."
+    ],
+    "lat": 13.03100390323447,
+    "lng": 77.60021110911131,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60021110911131!3d13.03100390323447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Hebbal Bengaluru"
+  },
+  {
+    "id": "clinic-31",
+    "name": "Dr. Gowda's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Sadashivanagar",
+    "address": "54 Main Road, Sadashivanagar, Bengaluru, KA 560070",
+    "phone": "+91 80 4967 3434",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.2,
+    "reviewCount": 232,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 13.00948085956969,
+    "lng": 77.57726712228795,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.57726712228795!3d13.00948085956969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Sadashivanagar Bengaluru"
+  },
+  {
+    "id": "clinic-44",
+    "name": "Dr. Alva's Ayurvedic Healing Centre",
+    "category": "ayurveda",
+    "area": "Electronic City",
+    "address": "33 Main Road, Electronic City, Bengaluru, KA 560061",
+    "phone": "+91 80 4967 7611",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.7,
+    "reviewCount": 130,
+    "reviews": [
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 12.843457288527503,
+    "lng": 77.66234024774002,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.66234024774002!3d12.843457288527503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-8",
+    "name": "Dr. Joshi's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Rajajinagar",
+    "address": "25 Main Road, Rajajinagar, Bengaluru, KA 560099",
+    "phone": "+91 80 4967 4914",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.5,
+    "reviewCount": 209,
+    "reviews": [
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.995438288731982,
+    "lng": 77.55395144935662,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.55395144935662!3d12.995438288731982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Rajajinagar Bengaluru"
+  },
+  {
+    "id": "clinic-48",
+    "name": "TrustWell Ayurveda - Kalyan Nagar",
+    "category": "ayurveda",
+    "area": "Kalyan Nagar",
+    "address": "35 Main Road, Kalyan Nagar, Bengaluru, KA 560087",
+    "phone": "+91 80 4967 6701",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.4,
+    "reviewCount": 66,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere."
+    ],
+    "lat": 13.027826836551144,
+    "lng": 77.6389728806165,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.6389728806165!3d13.027826836551144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Kalyan Nagar Bengaluru"
+  },
+  {
+    "id": "clinic-37",
+    "name": "Prakriti Malleshwaram Ayurvedic Kendra",
+    "category": "ayurveda",
+    "area": "Malleshwaram",
+    "address": "16 Main Road, Malleshwaram, Bengaluru, KA 560095",
+    "phone": "+91 80 4967 8334",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 98,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 13.004743084368327,
+    "lng": 77.56848056916479,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.56848056916479!3d13.004743084368327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Malleshwaram Bengaluru"
+  },
+  {
+    "id": "clinic-14",
+    "name": "Dr. Das's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Electronic City",
+    "address": "70 Main Road, Electronic City, Bengaluru, KA 560019",
+    "phone": "+91 80 4967 8617",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.7,
+    "reviewCount": 143,
+    "reviews": [
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area."
+    ],
+    "lat": 12.84149558124627,
+    "lng": 77.65641603615765,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.65641603615765!3d12.84149558124627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-11",
+    "name": "Lifeline Healthcare Centre - Malleshwaram",
+    "category": "allopathy",
+    "area": "Malleshwaram",
+    "address": "23 Main Road, Malleshwaram, Bengaluru, KA 560056",
+    "phone": "+91 80 4967 9746",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.3,
+    "reviewCount": 140,
+    "reviews": [
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 13.000170416088107,
+    "lng": 77.56650797086613,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.56650797086613!3d13.000170416088107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Malleshwaram Bengaluru"
+  },
+  {
+    "id": "clinic-16",
+    "name": "Apollo Spectra Healthcare Centre - Malleshwaram",
+    "category": "allopathy",
+    "area": "Malleshwaram",
+    "address": "43 Main Road, Malleshwaram, Bengaluru, KA 560077",
+    "phone": "+91 80 4967 6526",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.8,
+    "reviewCount": 161,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 13.002239294644685,
+    "lng": 77.56749997399174,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.56749997399174!3d13.002239294644685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Malleshwaram Bengaluru"
+  },
+  {
+    "id": "clinic-33",
+    "name": "Electronic City Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Electronic City",
+    "address": "47 Main Road, Electronic City, Bengaluru, KA 560035",
+    "phone": "+91 80 4967 7533",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.2,
+    "reviewCount": 188,
+    "reviews": [
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 12.849552603129323,
+    "lng": 77.65541409287084,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.65541409287084!3d12.849552603129323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-7",
+    "name": "Sadashivanagar Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Sadashivanagar",
+    "address": "5 Main Road, Sadashivanagar, Bengaluru, KA 560082",
+    "phone": "+91 80 4967 8023",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.4,
+    "reviewCount": 149,
+    "reviews": [
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere.",
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 13.007498435875743,
+    "lng": 77.57669294501517,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.57669294501517!3d13.007498435875743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Sadashivanagar Bengaluru"
+  },
+  {
+    "id": "clinic-24",
+    "name": "MedPlus Healthcare Centre - Yeshwanthpur",
+    "category": "allopathy",
+    "area": "Yeshwanthpur",
+    "address": "6 Main Road, Yeshwanthpur, Bengaluru, KA 560072",
+    "phone": "+91 80 4967 6610",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 13.02401820769795,
+    "lng": 77.54165940991176,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54165940991176!3d13.02401820769795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-55",
+    "name": "Koramangala Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "Koramangala",
+    "address": "21 Main Road, Koramangala, Bengaluru, KA 560012",
+    "phone": "+91 80 4967 9348",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area."
+    ],
+    "lat": 12.939040386012747,
+    "lng": 77.62442945216901,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.62442945216901!3d12.939040386012747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Koramangala Bengaluru"
+  },
+  {
+    "id": "clinic-43",
+    "name": "Kottakkal Ayurveda - Koramangala",
+    "category": "ayurveda",
+    "area": "Koramangala",
+    "address": "35 Main Road, Koramangala, Bengaluru, KA 560068",
+    "phone": "+91 80 4967 5468",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.5,
+    "reviewCount": 169,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.940052300920769,
+    "lng": 77.62212642649618,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.62212642649618!3d12.940052300920769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Koramangala Bengaluru"
+  },
+  {
+    "id": "clinic-41",
+    "name": "Prakriti Kalyan Nagar Ayurvedic Kendra",
+    "category": "ayurveda",
+    "area": "Kalyan Nagar",
+    "address": "47 Main Road, Kalyan Nagar, Bengaluru, KA 560086",
+    "phone": "+91 80 4967 8168",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.6,
+    "reviewCount": 225,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent."
+    ],
+    "lat": 13.026569248192299,
+    "lng": 77.63962934952713,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63962934952713!3d13.026569248192299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Kalyan Nagar Bengaluru"
+  },
+  {
+    "id": "clinic-3",
+    "name": "Dr. Rao's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Yeshwanthpur",
+    "address": "41 Main Road, Yeshwanthpur, Bengaluru, KA 560023",
+    "phone": "+91 80 4967 1485",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.1,
+    "reviewCount": 134,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 13.027102374873467,
+    "lng": 77.54064342814279,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54064342814279!3d13.027102374873467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-23",
+    "name": "Narayana Partner Healthcare Centre - Electronic City",
+    "category": "allopathy",
+    "area": "Electronic City",
+    "address": "99 Main Road, Electronic City, Bengaluru, KA 560073",
+    "phone": "+91 80 4967 5570",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.7,
+    "reviewCount": 238,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 12.843658555197418,
+    "lng": 77.6562165263079,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.6562165263079!3d12.843658555197418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-100",
+    "name": "Dr. Gowda's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Malleshwaram",
+    "address": "53 Main Road, Malleshwaram, Bengaluru, KA 560033",
+    "phone": "+91 80 4967 8782",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.8,
+    "reviewCount": 69,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 13.00673251107174,
+    "lng": 77.56145262291257,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.56145262291257!3d13.00673251107174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Malleshwaram Bengaluru"
+  },
+  {
+    "id": "clinic-69",
+    "name": "Whitefield Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "Whitefield",
+    "address": "42 Main Road, Whitefield, Bengaluru, KA 560015",
+    "phone": "+91 80 4967 1721",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.9,
+    "reviewCount": 126,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 12.97474278419681,
+    "lng": 77.75105229551562,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.75105229551562!3d12.97474278419681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Whitefield Bengaluru"
+  },
+  {
+    "id": "clinic-32",
+    "name": "Jayanagar Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Jayanagar",
+    "address": "33 Main Road, Jayanagar, Bengaluru, KA 560025",
+    "phone": "+91 80 4967 1209",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.7,
+    "reviewCount": 191,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.93210837768355,
+    "lng": 77.57968111527404,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.57968111527404!3d12.93210837768355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Jayanagar Bengaluru"
+  },
+  {
+    "id": "clinic-93",
+    "name": "Cessna Vet Centre - Sadashivanagar",
+    "category": "veterinary",
+    "area": "Sadashivanagar",
+    "address": "8 Main Road, Sadashivanagar, Bengaluru, KA 560016",
+    "phone": "+91 80 4967 9083",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.8,
+    "reviewCount": 208,
+    "reviews": [
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 13.003502377371419,
+    "lng": 77.58409684636037,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.58409684636037!3d13.003502377371419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Sadashivanagar Bengaluru"
+  },
+  {
+    "id": "clinic-6",
+    "name": "Dr. Murthy's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Marathahalli",
+    "address": "6 Main Road, Marathahalli, Bengaluru, KA 560085",
+    "phone": "+91 80 4967 5937",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 169,
+    "reviews": [
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit."
+    ],
+    "lat": 12.960757243102574,
+    "lng": 77.70161426326224,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.70161426326224!3d12.960757243102574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Marathahalli Bengaluru"
+  },
+  {
+    "id": "clinic-18",
+    "name": "Dr. Hegde's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Koramangala",
+    "address": "51 Main Road, Koramangala, Bengaluru, KA 560075",
+    "phone": "+91 80 4967 5965",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.5,
+    "reviewCount": 117,
+    "reviews": [
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good."
+    ],
+    "lat": 12.934889516367457,
+    "lng": 77.61986153589811,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.61986153589811!3d12.934889516367457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Koramangala Bengaluru"
+  },
+  {
+    "id": "clinic-87",
+    "name": "Banashankari Pet Hospital & Emergency Vet Hub",
+    "category": "veterinary",
+    "area": "Banashankari",
+    "address": "58 Main Road, Banashankari, Bengaluru, KA 560097",
+    "phone": "+91 80 4967 2507",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.4,
+    "reviewCount": 138,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly."
+    ],
+    "lat": 12.92542130347659,
+    "lng": 77.54510893275078,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54510893275078!3d12.92542130347659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Banashankari Bengaluru"
+  },
+  {
+    "id": "clinic-68",
+    "name": "CareMax Clinic - Banashankari",
+    "category": "homeopathy",
+    "area": "Banashankari",
+    "address": "76 Main Road, Banashankari, Bengaluru, KA 560049",
+    "phone": "+91 80 4967 6045",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.8,
+    "reviewCount": 103,
+    "reviews": [
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit."
+    ],
+    "lat": 12.923165026401538,
+    "lng": 77.55080252035187,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.55080252035187!3d12.923165026401538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Banashankari Bengaluru"
+  },
+  {
+    "id": "clinic-89",
+    "name": "Dr. Kumar's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Banashankari",
+    "address": "4 Main Road, Banashankari, Bengaluru, KA 560022",
+    "phone": "+91 80 4967 1079",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.4,
+    "reviewCount": 105,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere."
+    ],
+    "lat": 12.925889041642982,
+    "lng": 77.54240023753643,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54240023753643!3d12.925889041642982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Banashankari Bengaluru"
+  },
+  {
+    "id": "clinic-19",
+    "name": "Dr. Fernandez's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Whitefield",
+    "address": "96 Main Road, Whitefield, Bengaluru, KA 560022",
+    "phone": "+91 80 4967 6386",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 17,
+    "reviews": [
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent."
+    ],
+    "lat": 12.972217161612155,
+    "lng": 77.75363057169791,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.75363057169791!3d12.972217161612155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Whitefield Bengaluru"
+  },
+  {
+    "id": "clinic-53",
+    "name": "Prakriti Malleshwaram Ayurvedic Kendra",
+    "category": "ayurveda",
+    "area": "Malleshwaram",
+    "address": "88 Main Road, Malleshwaram, Bengaluru, KA 560034",
+    "phone": "+91 80 4967 6217",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.2,
+    "reviewCount": 41,
+    "reviews": [
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted."
+    ],
+    "lat": 12.998411176089398,
+    "lng": 77.56358312849248,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.56358312849248!3d12.998411176089398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Malleshwaram Bengaluru"
+  },
+  {
+    "id": "clinic-45",
+    "name": "Dr. Rao's Ayurvedic Healing Centre",
+    "category": "ayurveda",
+    "area": "HSR Layout",
+    "address": "92 Main Road, HSR Layout, Bengaluru, KA 560089",
+    "phone": "+91 80 4967 8185",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 196,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent."
+    ],
+    "lat": 12.910117794224728,
+    "lng": 77.64327016797266,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.64327016797266!3d12.910117794224728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "HSR Layout Bengaluru"
+  },
+  {
+    "id": "clinic-102",
+    "name": "Dr. Alva's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Electronic City",
+    "address": "81 Main Road, Electronic City, Bengaluru, KA 560070",
+    "phone": "+91 80 4967 7603",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.8,
+    "reviewCount": 135,
+    "reviews": [
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise."
+    ],
+    "lat": 12.841706170990467,
+    "lng": 77.66104556654328,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.66104556654328!3d12.841706170990467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-57",
+    "name": "Dr. Prasad's Homeo Clinic",
+    "category": "homeopathy",
+    "area": "Indiranagar",
+    "address": "18 Main Road, Indiranagar, Bengaluru, KA 560014",
+    "phone": "+91 80 4967 4749",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.2,
+    "reviewCount": 220,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area.",
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted."
+    ],
+    "lat": 12.98160024535575,
+    "lng": 77.64012286827297,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.64012286827297!3d12.98160024535575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Indiranagar Bengaluru"
+  },
+  {
+    "id": "clinic-51",
+    "name": "Dr. Reddy's Ayurvedic Healing Centre",
+    "category": "ayurveda",
+    "area": "BTM Layout",
+    "address": "78 Main Road, BTM Layout, Bengaluru, KA 560038",
+    "phone": "+91 80 4967 3337",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.3,
+    "reviewCount": 189,
+    "reviews": [
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.916059989646916,
+    "lng": 77.60643071198407,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60643071198407!3d12.916059989646916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "BTM Layout Bengaluru"
+  },
+  {
+    "id": "clinic-36",
+    "name": "Dr. Murthy's Ayurvedic Healing Centre",
+    "category": "ayurveda",
+    "area": "Malleshwaram",
+    "address": "48 Main Road, Malleshwaram, Bengaluru, KA 560030",
+    "phone": "+91 80 4967 4330",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.6,
+    "reviewCount": 131,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 13.001348667522441,
+    "lng": 77.56536749834949,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.56536749834949!3d13.001348667522441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Malleshwaram Bengaluru"
+  },
+  {
+    "id": "clinic-81",
+    "name": "Dr. Joshi's Homeo Clinic",
+    "category": "homeopathy",
+    "area": "Whitefield",
+    "address": "54 Main Road, Whitefield, Bengaluru, KA 560068",
+    "phone": "+91 80 4967 8274",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.2,
+    "reviewCount": 123,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet."
+    ],
+    "lat": 12.970359744011686,
+    "lng": 77.7451824575301,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.7451824575301!3d12.970359744011686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Whitefield Bengaluru"
+  },
+  {
+    "id": "clinic-21",
+    "name": "Rajajinagar Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Rajajinagar",
+    "address": "37 Main Road, Rajajinagar, Bengaluru, KA 560029",
+    "phone": "+91 80 4967 4747",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.8,
+    "reviewCount": 224,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 13.003127899426035,
+    "lng": 77.55140557946028,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.55140557946028!3d13.003127899426035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Rajajinagar Bengaluru"
+  },
+  {
+    "id": "clinic-71",
+    "name": "HSR Layout Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "HSR Layout",
+    "address": "3 Main Road, HSR Layout, Bengaluru, KA 560082",
+    "phone": "+91 80 4967 5471",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 117,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area.",
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise."
+    ],
+    "lat": 12.913610374326328,
+    "lng": 77.6472310176807,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.6472310176807!3d12.913610374326328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "HSR Layout Bengaluru"
+  },
+  {
+    "id": "clinic-76",
+    "name": "Dr. Batra's Clinic - Marathahalli",
+    "category": "homeopathy",
+    "area": "Marathahalli",
+    "address": "57 Main Road, Marathahalli, Bengaluru, KA 560034",
+    "phone": "+91 80 4967 3231",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.7,
+    "reviewCount": 16,
+    "reviews": [
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.956895667070134,
+    "lng": 77.69839591258587,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.69839591258587!3d12.956895667070134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Marathahalli Bengaluru"
+  },
+  {
+    "id": "clinic-25",
+    "name": "Dr. Prasad's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Jayanagar",
+    "address": "62 Main Road, Jayanagar, Bengaluru, KA 560026",
+    "phone": "+91 80 4967 9587",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.7,
+    "reviewCount": 157,
+    "reviews": [
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.932499371981526,
+    "lng": 77.57791328893546,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.57791328893546!3d12.932499371981526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Jayanagar Bengaluru"
+  },
+  {
+    "id": "clinic-94",
+    "name": "Dr. Reddy's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Indiranagar",
+    "address": "29 Main Road, Indiranagar, Bengaluru, KA 560093",
+    "phone": "+91 80 4967 3143",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.6,
+    "reviewCount": 125,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 12.981084970602268,
+    "lng": 77.64443046531858,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.64443046531858!3d12.981084970602268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Indiranagar Bengaluru"
+  },
+  {
+    "id": "clinic-99",
+    "name": "Dr. Hegde's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Kalyan Nagar",
+    "address": "94 Main Road, Kalyan Nagar, Bengaluru, KA 560047",
+    "phone": "+91 80 4967 5548",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.8,
+    "reviewCount": 232,
+    "reviews": [
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 13.027872213925548,
+    "lng": 77.64242103290636,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.64242103290636!3d13.027872213925548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Kalyan Nagar Bengaluru"
+  },
+  {
+    "id": "clinic-61",
+    "name": "Dr. Batra's Clinic - Rajajinagar",
+    "category": "homeopathy",
+    "area": "Rajajinagar",
+    "address": "59 Main Road, Rajajinagar, Bengaluru, KA 560079",
+    "phone": "+91 80 4967 1370",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.8,
+    "reviewCount": 70,
+    "reviews": [
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.998947200022583,
+    "lng": 77.54908300408368,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54908300408368!3d12.998947200022583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Rajajinagar Bengaluru"
+  },
+  {
+    "id": "clinic-105",
+    "name": "Electronic City Pet Hospital & Emergency Vet Hub",
+    "category": "veterinary",
+    "area": "Electronic City",
+    "address": "19 Main Road, Electronic City, Bengaluru, KA 560031",
+    "phone": "+91 80 4967 1652",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.3,
+    "reviewCount": 118,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area."
+    ],
+    "lat": 12.848588328171182,
+    "lng": 77.66176347352857,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.66176347352857!3d12.848588328171182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-9",
+    "name": "Dr. Joshi's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "BTM Layout",
+    "address": "93 Main Road, BTM Layout, Bengaluru, KA 560081",
+    "phone": "+91 80 4967 3880",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.7,
+    "reviewCount": 146,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 12.913724512866628,
+    "lng": 77.61080703705645,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.61080703705645!3d12.913724512866628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "BTM Layout Bengaluru"
+  },
+  {
+    "id": "clinic-60",
+    "name": "Marathahalli Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "Marathahalli",
+    "address": "52 Main Road, Marathahalli, Bengaluru, KA 560082",
+    "phone": "+91 80 4967 3683",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.2,
+    "reviewCount": 161,
+    "reviews": [
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area.",
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.954080298201207,
+    "lng": 77.7060188936431,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.7060188936431!3d12.954080298201207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Marathahalli Bengaluru"
+  },
+  {
+    "id": "clinic-75",
+    "name": "Positive Homeopathy Clinic - Malleshwaram",
+    "category": "homeopathy",
+    "area": "Malleshwaram",
+    "address": "10 Main Road, Malleshwaram, Bengaluru, KA 560038",
+    "phone": "+91 80 4967 5803",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.7,
+    "reviewCount": 234,
+    "reviews": [
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 13.00430924981076,
+    "lng": 77.56224439016397,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.56224439016397!3d13.00430924981076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Malleshwaram Bengaluru"
+  },
+  {
+    "id": "clinic-2",
+    "name": "Dr. Nair's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Rajajinagar",
+    "address": "23 Main Road, Rajajinagar, Bengaluru, KA 560014",
+    "phone": "+91 80 4967 2367",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.8,
+    "reviewCount": 74,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent."
+    ],
+    "lat": 12.996040471545834,
+    "lng": 77.55194504332216,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.55194504332216!3d12.996040471545834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Rajajinagar Bengaluru"
+  },
+  {
+    "id": "clinic-40",
+    "name": "Dr. Murthy's Ayurvedic Healing Centre",
+    "category": "ayurveda",
+    "area": "Marathahalli",
+    "address": "16 Main Road, Marathahalli, Bengaluru, KA 560033",
+    "phone": "+91 80 4967 2984",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.7,
+    "reviewCount": 42,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere.",
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly."
+    ],
+    "lat": 12.95598387976913,
+    "lng": 77.69923676022334,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.69923676022334!3d12.95598387976913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Marathahalli Bengaluru"
+  },
+  {
+    "id": "clinic-50",
+    "name": "AyurVAID Ayurveda - Rajajinagar",
+    "category": "ayurveda",
+    "area": "Rajajinagar",
+    "address": "30 Main Road, Rajajinagar, Bengaluru, KA 560020",
+    "phone": "+91 80 4967 8225",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.4,
+    "reviewCount": 23,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 13.002191561640077,
+    "lng": 77.55733801242793,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.55733801242793!3d13.002191561640077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Rajajinagar Bengaluru"
+  },
+  {
+    "id": "clinic-91",
+    "name": "Sadashivanagar Pet Hospital & Emergency Vet Hub",
+    "category": "veterinary",
+    "area": "Sadashivanagar",
+    "address": "14 Main Road, Sadashivanagar, Bengaluru, KA 560073",
+    "phone": "+91 80 4967 8554",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.8,
+    "reviewCount": 221,
+    "reviews": [
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly."
+    ],
+    "lat": 13.003349960749489,
+    "lng": 77.58196358738324,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.58196358738324!3d13.003349960749489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Sadashivanagar Bengaluru"
+  },
+  {
+    "id": "clinic-80",
+    "name": "Dr. Nair's Homeo Clinic",
+    "category": "homeopathy",
+    "area": "Hebbal",
+    "address": "9 Main Road, Hebbal, Bengaluru, KA 560056",
+    "phone": "+91 80 4967 6544",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.6,
+    "reviewCount": 35,
+    "reviews": [
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit.",
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted."
+    ],
+    "lat": 13.037266475250055,
+    "lng": 77.59385572035337,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.59385572035337!3d13.037266475250055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Hebbal Bengaluru"
+  },
+  {
+    "id": "clinic-83",
+    "name": "Dr. Shetty's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Electronic City",
+    "address": "26 Main Road, Electronic City, Bengaluru, KA 560051",
+    "phone": "+91 80 4967 2263",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.8,
+    "reviewCount": 182,
+    "reviews": [
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere."
+    ],
+    "lat": 12.842207402199982,
+    "lng": 77.66104133949116,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.66104133949116!3d12.842207402199982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-104",
+    "name": "Greenpet Vet Centre - Marathahalli",
+    "category": "veterinary",
+    "area": "Marathahalli",
+    "address": "19 Main Road, Marathahalli, Bengaluru, KA 560052",
+    "phone": "+91 80 4967 6163",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.6,
+    "reviewCount": 101,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good."
+    ],
+    "lat": 12.958973602965026,
+    "lng": 77.69729455493427,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.69729455493427!3d12.958973602965026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Marathahalli Bengaluru"
+  },
+  {
+    "id": "clinic-79",
+    "name": "Positive Homeopathy Clinic - Kalyan Nagar",
+    "category": "homeopathy",
+    "area": "Kalyan Nagar",
+    "address": "16 Main Road, Kalyan Nagar, Bengaluru, KA 560012",
+    "phone": "+91 80 4967 1586",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.4,
+    "reviewCount": 166,
+    "reviews": [
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area."
+    ],
+    "lat": 13.031839041207448,
+    "lng": 77.63813416882653,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63813416882653!3d13.031839041207448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Kalyan Nagar Bengaluru"
+  },
+  {
+    "id": "clinic-96",
+    "name": "Cessna Lifeline Vet Centre - BTM Layout",
+    "category": "veterinary",
+    "area": "BTM Layout",
+    "address": "3 Main Road, BTM Layout, Bengaluru, KA 560013",
+    "phone": "+91 80 4967 7234",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.4,
+    "reviewCount": 52,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent."
+    ],
+    "lat": 12.921128656986454,
+    "lng": 77.60927366730216,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60927366730216!3d12.921128656986454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "BTM Layout Bengaluru"
+  },
+  {
+    "id": "clinic-78",
+    "name": "Positive Homeopathy Clinic - Domlur",
+    "category": "homeopathy",
+    "area": "Domlur",
+    "address": "89 Main Road, Domlur, Bengaluru, KA 560014",
+    "phone": "+91 80 4967 3514",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.5,
+    "reviewCount": 181,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.964031970452139,
+    "lng": 77.63625333299449,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63625333299449!3d12.964031970452139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Domlur Bengaluru"
+  },
+  {
+    "id": "clinic-70",
+    "name": "Dr. Alva's Homeo Clinic",
+    "category": "homeopathy",
+    "area": "HSR Layout",
+    "address": "63 Main Road, HSR Layout, Bengaluru, KA 560035",
+    "phone": "+91 80 4967 5881",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.5,
+    "reviewCount": 171,
+    "reviews": [
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.91411762689043,
+    "lng": 77.63992929171388,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63992929171388!3d12.91411762689043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "HSR Layout Bengaluru"
+  },
+  {
+    "id": "clinic-98",
+    "name": "Dr. Fernandez's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Hebbal",
+    "address": "80 Main Road, Hebbal, Bengaluru, KA 560069",
+    "phone": "+91 80 4967 2355",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.6,
+    "reviewCount": 79,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit."
+    ],
+    "lat": 13.035856985567294,
+    "lng": 77.60295756241216,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60295756241216!3d13.035856985567294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Hebbal Bengaluru"
+  },
+  {
+    "id": "clinic-92",
+    "name": "Dr. Nair's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Yeshwanthpur",
+    "address": "16 Main Road, Yeshwanthpur, Bengaluru, KA 560017",
+    "phone": "+91 80 4967 3804",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 13.024780224331222,
+    "lng": 77.54096176739533,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54096176739533!3d13.024780224331222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-65",
+    "name": "Dr. Rao's Homeo Clinic",
+    "category": "homeopathy",
+    "area": "Banashankari",
+    "address": "47 Main Road, Banashankari, Bengaluru, KA 560024",
+    "phone": "+91 80 4967 7105",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.4,
+    "reviewCount": 115,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet."
+    ],
+    "lat": 12.922140184102687,
+    "lng": 77.54251983601134,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54251983601134!3d12.922140184102687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Banashankari Bengaluru"
+  },
+  {
+    "id": "clinic-64",
+    "name": "Dr. Batra's Clinic - Yeshwanthpur",
+    "category": "homeopathy",
+    "area": "Yeshwanthpur",
+    "address": "51 Main Road, Yeshwanthpur, Bengaluru, KA 560079",
+    "phone": "+91 80 4967 6884",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.2,
+    "reviewCount": 78,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted."
+    ],
+    "lat": 13.027209446675984,
+    "lng": 77.5395425206444,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.5395425206444!3d13.027209446675984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-74",
+    "name": "BTM Layout Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "BTM Layout",
+    "address": "85 Main Road, BTM Layout, Bengaluru, KA 560088",
+    "phone": "+91 80 4967 1691",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.7,
+    "reviewCount": 49,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted."
+    ],
+    "lat": 12.919520349268236,
+    "lng": 77.60819865883936,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60819865883936!3d12.919520349268236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "BTM Layout Bengaluru"
+  },
+  {
+    "id": "clinic-84",
+    "name": "Dr. Shetty's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "HSR Layout",
+    "address": "6 Main Road, HSR Layout, Bengaluru, KA 560071",
+    "phone": "+91 80 4967 3205",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.4,
+    "reviewCount": 238,
+    "reviews": [
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit.",
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 12.911835938664625,
+    "lng": 77.64847366718544,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.64847366718544!3d12.911835938664625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "HSR Layout Bengaluru"
+  },
+  {
+    "id": "clinic-58",
+    "name": "CareMax Clinic - Whitefield",
+    "category": "homeopathy",
+    "area": "Whitefield",
+    "address": "32 Main Road, Whitefield, Bengaluru, KA 560017",
+    "phone": "+91 80 4967 7651",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.8,
+    "reviewCount": 17,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 12.968360607486964,
+    "lng": 77.75107819008905,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.75107819008905!3d12.968360607486964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Whitefield Bengaluru"
+  },
+  {
+    "id": "clinic-77",
+    "name": "BTM Layout Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "BTM Layout",
+    "address": "78 Main Road, BTM Layout, Bengaluru, KA 560056",
+    "phone": "+91 80 4967 6537",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.6,
+    "reviewCount": 126,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise."
+    ],
+    "lat": 12.920249440078427,
+    "lng": 77.60631495026684,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60631495026684!3d12.920249440078427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "BTM Layout Bengaluru"
+  },
+  {
+    "id": "clinic-85",
+    "name": "Domlur Pet Hospital & Emergency Vet Hub",
+    "category": "veterinary",
+    "area": "Domlur",
+    "address": "74 Main Road, Domlur, Bengaluru, KA 560068",
+    "phone": "+91 80 4967 6657",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.9,
+    "reviewCount": 162,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.965429159745204,
+    "lng": 77.63968923070013,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63968923070013!3d12.965429159745204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Domlur Bengaluru"
+  },
+  {
+    "id": "clinic-54",
+    "name": "Rajajinagar Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "Rajajinagar",
+    "address": "99 Main Road, Rajajinagar, Bengaluru, KA 560074",
+    "phone": "+91 80 4967 1778",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.2,
+    "reviewCount": 235,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit."
+    ],
+    "lat": 12.996897693476429,
+    "lng": 77.55442719162549,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.55442719162549!3d12.996897693476429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Rajajinagar Bengaluru"
+  },
+  {
+    "id": "clinic-90",
+    "name": "BTM Layout Pet Hospital & Emergency Vet Hub",
+    "category": "veterinary",
+    "area": "BTM Layout",
+    "address": "62 Main Road, BTM Layout, Bengaluru, KA 560065",
+    "phone": "+91 80 4967 9743",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.9,
+    "reviewCount": 210,
+    "reviews": [
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 12.920565106320595,
+    "lng": 77.60624238870741,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60624238870741!3d12.920565106320595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "BTM Layout Bengaluru"
+  },
+  {
+    "id": "clinic-95",
+    "name": "Marathahalli Pet Hospital & Emergency Vet Hub",
+    "category": "veterinary",
+    "area": "Marathahalli",
+    "address": "22 Main Road, Marathahalli, Bengaluru, KA 560038",
+    "phone": "+91 80 4967 5911",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.7,
+    "reviewCount": 136,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 12.957459152020867,
+    "lng": 77.69960221043564,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.69960221043564!3d12.957459152020867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Marathahalli Bengaluru"
+  },
+  {
+    "id": "clinic-66",
+    "name": "Dr. Batra's Clinic - Hebbal",
+    "category": "homeopathy",
+    "area": "Hebbal",
+    "address": "32 Main Road, Hebbal, Bengaluru, KA 560063",
+    "phone": "+91 80 4967 3637",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.2,
+    "reviewCount": 149,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good."
+    ],
+    "lat": 13.036170057146174,
+    "lng": 77.60103516005026,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60103516005026!3d13.036170057146174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Hebbal Bengaluru"
+  },
+  {
+    "id": "clinic-62",
+    "name": "Dr. Prasad's Homeo Clinic",
+    "category": "homeopathy",
+    "area": "Yeshwanthpur",
+    "address": "99 Main Road, Yeshwanthpur, Bengaluru, KA 560082",
+    "phone": "+91 80 4967 2361",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.8,
+    "reviewCount": 168,
+    "reviews": [
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 13.031394868505442,
+    "lng": 77.5412882376504,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.5412882376504!3d13.031394868505442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-59",
+    "name": "Banashankari Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "Banashankari",
+    "address": "65 Main Road, Banashankari, Bengaluru, KA 560090",
+    "phone": "+91 80 4967 9378",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.4,
+    "reviewCount": 219,
+    "reviews": [
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly."
+    ],
+    "lat": 12.92763358798746,
+    "lng": 77.55020675907613,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.55020675907613!3d12.92763358798746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Banashankari Bengaluru"
+  },
+  {
+    "id": "clinic-101",
+    "name": "Domlur Pet Hospital & Emergency Vet Hub",
+    "category": "veterinary",
+    "area": "Domlur",
+    "address": "16 Main Road, Domlur, Bengaluru, KA 560018",
+    "phone": "+91 80 4967 9615",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.4,
+    "reviewCount": 137,
+    "reviews": [
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot.",
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good."
+    ],
+    "lat": 12.960438906714343,
+    "lng": 77.63520991994523,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63520991994523!3d12.960438906714343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Domlur Bengaluru"
+  },
+  {
+    "id": "clinic-88",
+    "name": "Dr. Nair's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Electronic City",
+    "address": "26 Main Road, Electronic City, Bengaluru, KA 560019",
+    "phone": "+91 80 4967 8901",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.5,
+    "reviewCount": 141,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent."
+    ],
+    "lat": 12.841578894250917,
+    "lng": 77.65696818259248,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.65696818259248!3d12.841578894250917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-73",
+    "name": "Dr. Batra's Clinic - Marathahalli",
+    "category": "homeopathy",
+    "area": "Marathahalli",
+    "address": "8 Main Road, Marathahalli, Bengaluru, KA 560020",
+    "phone": "+91 80 4967 2907",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.6,
+    "reviewCount": 38,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.953110601886216,
+    "lng": 77.70057388943334,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.70057388943334!3d12.953110601886216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Marathahalli Bengaluru"
+  },
+  {
+    "id": "clinic-103",
+    "name": "Dr. Reddy's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Jayanagar",
+    "address": "44 Main Road, Jayanagar, Bengaluru, KA 560057",
+    "phone": "+91 80 4967 9091",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.4,
+    "reviewCount": 106,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good."
+    ],
+    "lat": 12.929467159658394,
+    "lng": 77.58203561775186,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.58203561775186!3d12.929467159658394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Jayanagar Bengaluru"
+  },
+  {
+    "id": "clinic-82",
+    "name": "Dr. Nair's Homeo Clinic",
+    "category": "homeopathy",
+    "area": "Kalyan Nagar",
+    "address": "55 Main Road, Kalyan Nagar, Bengaluru, KA 560092",
+    "phone": "+91 80 4967 6375",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.1,
+    "reviewCount": 144,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 13.029309374478993,
+    "lng": 77.6360032516638,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.6360032516638!3d13.029309374478993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Kalyan Nagar Bengaluru"
+  },
+  {
+    "id": "clinic-72",
+    "name": "Kalyan Nagar Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "Kalyan Nagar",
+    "address": "70 Main Road, Kalyan Nagar, Bengaluru, KA 560052",
+    "phone": "+91 80 4967 3145",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.4,
+    "reviewCount": 38,
+    "reviews": [
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 13.027827333179578,
+    "lng": 77.6421952606728,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.6421952606728!3d13.027827333179578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Kalyan Nagar Bengaluru"
+  },
+  {
+    "id": "clinic-56",
+    "name": "Jayanagar Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "Jayanagar",
+    "address": "84 Main Road, Jayanagar, Bengaluru, KA 560065",
+    "phone": "+91 80 4967 7635",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.3,
+    "reviewCount": 19,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early."
+    ],
+    "lat": 12.934251211261008,
+    "lng": 77.58053164831982,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.58053164831982!3d12.934251211261008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Jayanagar Bengaluru"
+  },
+  {
+    "id": "clinic-67",
+    "name": "CareMax Clinic - Yeshwanthpur",
+    "category": "homeopathy",
+    "area": "Yeshwanthpur",
+    "address": "55 Main Road, Yeshwanthpur, Bengaluru, KA 560014",
+    "phone": "+91 80 4967 3340",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 188,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly."
+    ],
+    "lat": 13.031964746035055,
+    "lng": 77.53957845973555,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.53957845973555!3d13.031964746035055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-22",
+    "name": "Whitefield Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Whitefield",
+    "address": "83 Main Road, Whitefield, Bengaluru, KA 560024",
+    "phone": "+91 80 4967 5855",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.3,
+    "reviewCount": 209,
+    "reviews": [
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent."
+    ],
+    "lat": 12.974410627035333,
+    "lng": 77.74773109107603,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.74773109107603!3d12.974410627035333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Whitefield Bengaluru"
+  },
+  {
+    "id": "clinic-63",
+    "name": "BTM Layout Comprehensive Homeopathy Center",
+    "category": "homeopathy",
+    "area": "BTM Layout",
+    "address": "64 Main Road, BTM Layout, Bengaluru, KA 560034",
+    "phone": "+91 80 4967 9189",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.8,
+    "reviewCount": 31,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent."
+    ],
+    "lat": 12.913715079823751,
+    "lng": 77.60889505153789,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60889505153789!3d12.913715079823751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "BTM Layout Bengaluru"
+  },
+  {
+    "id": "clinic-30",
+    "name": "Yeshwanthpur Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Yeshwanthpur",
+    "address": "9 Main Road, Yeshwanthpur, Bengaluru, KA 560058",
+    "phone": "+91 80 4967 3298",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.5,
+    "reviewCount": 184,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere."
+    ],
+    "lat": 13.024075516027999,
+    "lng": 77.54193706911852,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54193706911852!3d13.024075516027999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-26",
+    "name": "Dr. Das's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Whitefield",
+    "address": "50 Main Road, Whitefield, Bengaluru, KA 560084",
+    "phone": "+91 80 4967 6263",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.1,
+    "reviewCount": 122,
+    "reviews": [
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise.",
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet."
+    ],
+    "lat": 12.974736940461971,
+    "lng": 77.74528111076022,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.74528111076022!3d12.974736940461971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Whitefield Bengaluru"
+  },
+  {
+    "id": "clinic-42",
+    "name": "Patanjali Ayurveda - Hebbal",
+    "category": "ayurveda",
+    "area": "Hebbal",
+    "address": "56 Main Road, Hebbal, Bengaluru, KA 560093",
+    "phone": "+91 80 4967 3729",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.6,
+    "reviewCount": 116,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 13.03303760639172,
+    "lng": 77.5946806456258,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.5946806456258!3d13.03303760639172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Hebbal Bengaluru"
+  },
+  {
+    "id": "clinic-52",
+    "name": "TrustWell Ayurveda - Electronic City",
+    "category": "ayurveda",
+    "area": "Electronic City",
+    "address": "25 Main Road, Electronic City, Bengaluru, KA 560073",
+    "phone": "+91 80 4967 7455",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.2,
+    "reviewCount": 104,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 12.849347150826755,
+    "lng": 77.66004001803802,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.66004001803802!3d12.849347150826755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-49",
+    "name": "Dr. Prasad's Ayurvedic Healing Centre",
+    "category": "ayurveda",
+    "area": "Electronic City",
+    "address": "38 Main Road, Electronic City, Bengaluru, KA 560073",
+    "phone": "+91 80 4967 1136",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.2,
+    "reviewCount": 223,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "Great diagnosis by the physician, didn't prescribe unnecessary antibiotics which I appreciate. Reception desk could be a bit more polite though."
+    ],
+    "lat": 12.849553914736145,
+    "lng": 77.65750622399091,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.65750622399091!3d12.849553914736145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-27",
+    "name": "Sadashivanagar Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Sadashivanagar",
+    "address": "30 Main Road, Sadashivanagar, Bengaluru, KA 560034",
+    "phone": "+91 80 4967 7079",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.5,
+    "reviewCount": 154,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere.",
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted."
+    ],
+    "lat": 13.008589307988618,
+    "lng": 77.58475560619598,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.58475560619598!3d13.008589307988618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Sadashivanagar Bengaluru"
+  },
+  {
+    "id": "clinic-4",
+    "name": "Apollo Spectra Healthcare Centre - HSR Layout",
+    "category": "allopathy",
+    "area": "HSR Layout",
+    "address": "40 Main Road, HSR Layout, Bengaluru, KA 560044",
+    "phone": "+91 80 4967 6157",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.7,
+    "reviewCount": 171,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 12.911066676902971,
+    "lng": 77.64693380431129,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.64693380431129!3d12.911066676902971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "HSR Layout Bengaluru"
+  },
+  {
+    "id": "clinic-13",
+    "name": "Hebbal Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Hebbal",
+    "address": "59 Main Road, Hebbal, Bengaluru, KA 560084",
+    "phone": "+91 80 4967 9894",
+    "operatingHours": "Tue-Sun: 9:00 AM - 6:00 PM | Mon: Closed",
+    "rating": 4.2,
+    "reviewCount": 180,
+    "reviews": [
+      "Took my cat here for her annual vaccinations. The vet was incredibly gentle and the whole process took barely 10 minutes. Will definitely make this our regular vet.",
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area."
+    ],
+    "lat": 13.036190844085551,
+    "lng": 77.59952487102981,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.59952487102981!3d13.036190844085551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Hebbal Bengaluru"
+  },
+  {
+    "id": "clinic-38",
+    "name": "AyurVAID Ayurveda - Marathahalli",
+    "category": "ayurveda",
+    "area": "Marathahalli",
+    "address": "81 Main Road, Marathahalli, Bengaluru, KA 560045",
+    "phone": "+91 80 4967 5905",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.5,
+    "reviewCount": 139,
+    "reviews": [
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 12.961501486426828,
+    "lng": 77.70015983040237,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.70015983040237!3d12.961501486426828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Marathahalli Bengaluru"
+  },
+  {
+    "id": "clinic-47",
+    "name": "Dr. Fernandez's Ayurvedic Healing Centre",
+    "category": "ayurveda",
+    "area": "Indiranagar",
+    "address": "9 Main Road, Indiranagar, Bengaluru, KA 560088",
+    "phone": "+91 80 4967 4861",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 60,
+    "reviews": [
+      "Been visiting this Ayurveda center for chronic back pain. Authentic treatments. The medicine smells strong but it actually works. Deducted one star because parking is a nightmare in this area.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit."
+    ],
+    "lat": 12.975881845306498,
+    "lng": 77.63602002831921,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63602002831921!3d12.975881845306498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Indiranagar Bengaluru"
+  },
+  {
+    "id": "clinic-29",
+    "name": "PrimeCare Healthcare Centre - Yeshwanthpur",
+    "category": "allopathy",
+    "area": "Yeshwanthpur",
+    "address": "83 Main Road, Yeshwanthpur, Bengaluru, KA 560083",
+    "phone": "+91 80 4967 1707",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.3,
+    "reviewCount": 38,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 13.027076251101292,
+    "lng": 77.53624115318775,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.53624115318775!3d13.027076251101292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  },
+  {
+    "id": "clinic-12",
+    "name": "Electronic City Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Electronic City",
+    "address": "69 Main Road, Electronic City, Bengaluru, KA 560079",
+    "phone": "+91 80 4967 9824",
+    "operatingHours": "Mon-Sat: 8:00 AM - 8:00 PM | Sun: Closed",
+    "rating": 4.1,
+    "reviewCount": 82,
+    "reviews": [
+      "Had a mixed experience. The doctor was undoubtedly knowledgeable, but the clinic was extremely noisy and chaotic. Took 45 minutes just to get the bill sorted.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 12.845196084009164,
+    "lng": 77.65992319097452,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.65992319097452!3d12.845196084009164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Electronic City Bengaluru"
+  },
+  {
+    "id": "clinic-35",
+    "name": "Prakriti Domlur Ayurvedic Kendra",
+    "category": "ayurveda",
+    "area": "Domlur",
+    "address": "54 Main Road, Domlur, Bengaluru, KA 560047",
+    "phone": "+91 80 4967 3448",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.4,
+    "reviewCount": 135,
+    "reviews": [
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise."
+    ],
+    "lat": 12.962411246661894,
+    "lng": 77.63627487554521,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.63627487554521!3d12.962411246661894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Domlur Bengaluru"
+  },
+  {
+    "id": "clinic-5",
+    "name": "Dr. Fernandez's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Koramangala",
+    "address": "42 Main Road, Koramangala, Bengaluru, KA 560042",
+    "phone": "+91 80 4967 3739",
+    "operatingHours": "Mon-Sun: 24/7 Emergency Care",
+    "rating": 4.4,
+    "reviewCount": 236,
+    "reviews": [
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good.",
+      "The Ayurvedic massage therapy for my joint pain was incredibly relaxing and effective. The therapists are well-trained. A bit on the pricey side, but worth it."
+    ],
+    "lat": 12.932123967643504,
+    "lng": 77.62481410822718,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.62481410822718!3d12.932123967643504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Koramangala Bengaluru"
+  },
+  {
+    "id": "clinic-34",
+    "name": "Dr. Prasad's Family Clinic & Diagnostic Centre",
+    "category": "allopathy",
+    "area": "Malleshwaram",
+    "address": "9 Main Road, Malleshwaram, Bengaluru, KA 560055",
+    "phone": "+91 80 4967 1046",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.8,
+    "reviewCount": 136,
+    "reviews": [
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Overall decent experience. The consultation was fine, but the pharmacy attached didn't have the prescribed medicines in stock so I had to hunt for them elsewhere."
+    ],
+    "lat": 13.001154407481065,
+    "lng": 77.56819671673236,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.56819671673236!3d13.001154407481065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Malleshwaram Bengaluru"
+  },
+  {
+    "id": "clinic-20",
+    "name": "MedPlus Healthcare Centre - Sadashivanagar",
+    "category": "allopathy",
+    "area": "Sadashivanagar",
+    "address": "1 Main Road, Sadashivanagar, Bengaluru, KA 560058",
+    "phone": "+91 80 4967 8905",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.1,
+    "reviewCount": 23,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Clean facility. Booked an emergency slot for my pup's paw injury at 2 AM. Staff was calm, professional, and handled the situation instantly. Rates are transparent.",
+      "Very prompt service for my routine blood work. The phlebotomist was skilled, didn't feel a thing. The AC in the waiting room was blasting too cold, but otherwise good."
+    ],
+    "lat": 13.006916781709227,
+    "lng": 77.57838328111959,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.57838328111959!3d13.006916781709227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Sadashivanagar Bengaluru"
+  },
+  {
+    "id": "clinic-15",
+    "name": "Banashankari Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "Banashankari",
+    "address": "47 Main Road, Banashankari, Bengaluru, KA 560019",
+    "phone": "+91 80 4967 7598",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.6,
+    "reviewCount": 91,
+    "reviews": [
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 12.929823824866883,
+    "lng": 77.54448843572007,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.54448843572007!3d12.929823824866883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Banashankari Bengaluru"
+  },
+  {
+    "id": "clinic-28",
+    "name": "BTM Layout Comprehensive Care & Specialized Clinic",
+    "category": "allopathy",
+    "area": "BTM Layout",
+    "address": "83 Main Road, BTM Layout, Bengaluru, KA 560064",
+    "phone": "+91 80 4967 2599",
+    "operatingHours": "Mon-Sat: 10:00 AM - 7:00 PM | Sun: 10:00 AM - 2:00 PM",
+    "rating": 4.8,
+    "reviewCount": 138,
+    "reviews": [
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot."
+    ],
+    "lat": 12.920527452629916,
+    "lng": 77.60915769043743,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.60915769043743!3d12.920527452629916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "BTM Layout Bengaluru"
+  },
+  {
+    "id": "clinic-97",
+    "name": "Dr. Rao's Pet Care Clinic",
+    "category": "veterinary",
+    "area": "Indiranagar",
+    "address": "2 Main Road, Indiranagar, Bengaluru, KA 560014",
+    "phone": "+91 80 4967 4822",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.5,
+    "reviewCount": 88,
+    "reviews": [
+      "The doctor spent a good 15 minutes explaining my test reports in detail. Highly empathetic. Finding a parking spot near the building took forever, plan to arrive early.",
+      "A lifesaver in our neighborhood. Brought my kid in with high fever late at night and the on-duty doctor handled it with so much care and expertise.",
+      "Highly professional setup. They use a neat digital token system so you know exactly when your turn is. The waiting area is spacious and well-lit."
+    ],
+    "lat": 12.974088221498352,
+    "lng": 77.6358908363013,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.6358908363013!3d12.974088221498352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Indiranagar Bengaluru"
+  },
+  {
+    "id": "clinic-86",
+    "name": "Yeshwanthpur Pet Hospital & Emergency Vet Hub",
+    "category": "veterinary",
+    "area": "Yeshwanthpur",
+    "address": "57 Main Road, Yeshwanthpur, Bengaluru, KA 560018",
+    "phone": "+91 80 4967 4574",
+    "operatingHours": "Mon-Fri: 9:00 AM - 9:00 PM | Sat: 9:00 AM - 5:00 PM | Sun: Closed",
+    "rating": 4.3,
+    "reviewCount": 112,
+    "reviews": [
+      "I've been going to this homeopathic clinic for my severe allergies. While the results are slow, the doctor is very patient and listens to all symptoms thoroughly.",
+      "Absolutely wonderful pediatric care. The doctors know how to keep children engaged and calm during checkups. They even have a small play area which helps a lot.",
+      "Dr. Hegde was fantastic with my grandmother's checkup. The clinic was crowded on a Saturday morning, so we had to wait 20 mins past our slot, but the care was top-notch."
+    ],
+    "lat": 13.028580783981939,
+    "lng": 77.53632523109948,
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15552.000000000000!2d77.53632523109948!3d13.028580783981939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "destinationQuery": "Yeshwanthpur Bengaluru"
+  }
+]

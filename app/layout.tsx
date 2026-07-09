@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ClientScene from "./components/ClientScene";
+import AmbientBackground from "./components/AmbientBackground";
+import { Providers } from "./providers";
+import AIEngineBot from "./components/AIEngineBot";
+import ToastNotification from "./components/ToastNotification";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,15 +32,17 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${geistMono.variable}`}
     >
-      <body className="min-h-screen bg-slate-50/50 text-slate-900 antialiased">
-        {/* 3D Background Scene – fixed behind all content */}
-        <div className="fixed inset-0 z-0 pointer-events-none">
-          <ClientScene />
-        </div>
+      <body className="min-h-screen bg-slate-50/50 text-slate-900 antialiased flex flex-col">
+        {/* Ambient bubble background – fixed behind all content */}
+        <AmbientBackground />
 
-        {/* Content layer above the 3D scene */}
-        <div className="relative z-10">
-          {children}
+        {/* Content layer above the background */}
+        <div className="relative z-10 flex flex-col flex-grow min-h-screen">
+          <Providers>
+            {children}
+            <AIEngineBot />
+            <ToastNotification />
+          </Providers>
         </div>
       </body>
     </html>

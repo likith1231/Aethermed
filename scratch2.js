@@ -1,13 +1,32 @@
-"use client";
+const fs = require('fs');
+
+const clinicsData = JSON.parse(fs.readFileSync('clinics_data.json', 'utf-8'));
+
+const tsxContent = `"use client";
 
 import { useState, useEffect, Suspense, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useLanguage } from "../context/LanguageContext";
 
-import { clinics, Clinic } from "../data/clinics";
+interface Clinic {
+  id: string;
+  name: string;
+  category: string;
+  area: string;
+  address: string;
+  operatingHours: string;
+  phone: string;
+  rating: number;
+  reviewCount: number;
+  reviews: string[];
+  lat: number;
+  lng: number;
+  mapUrl: string;
+  destinationQuery: string;
+}
+
+const clinics: Clinic[] = ${JSON.stringify(clinicsData, null, 2)};
 
 const USER_LAT = 12.9716;
 const USER_LNG = 77.5946;
@@ -29,7 +48,6 @@ function getDistance(lat1: number, lon1: number, lat2: number, lon2: number): nu
 function LocationsPageContent() {
   const searchParams = useSearchParams();
   const typeParam = searchParams.get("type")?.toLowerCase();
-  const { t } = useLanguage();
 
   const [activeCategory, setActiveCategory] = useState<string>("allopathy");
   const [searchQuery, setSearchQuery] = useState("");
@@ -110,7 +128,7 @@ function LocationsPageContent() {
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         const { latitude, longitude } = pos.coords;
-        const url = `https://www.google.com/maps/dir/?api=1&origin=${latitude},${longitude}&destination=${encodeURIComponent(currentClinic.destinationQuery)}`;
+        const url = \`https://www.google.com/maps/dir/?api=1&origin=\${latitude},\${longitude}&destination=\${encodeURIComponent(currentClinic.destinationQuery)}\`;
         window.open(url, "_blank");
         setGeoStatus("idle");
       },
@@ -128,12 +146,7 @@ function LocationsPageContent() {
   ];
 
   return (
-    <div className="min-h-screen bg-transparent flex flex-col relative">
-      <Link href="/" className="absolute top-6 left-6 z-[60] flex items-center justify-center w-10 h-10 rounded-full bg-white/10 dark:bg-slate-800/40 backdrop-blur-md border border-white/10 dark:border-slate-700/50 text-slate-700 dark:text-slate-300 hover:bg-white/20 dark:hover:bg-slate-800/70 transition-all shadow-sm cursor-pointer">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M19 12H5M12 19l-7-7 7-7"/>
-        </svg>
-      </Link>
+    <div className="min-h-screen bg-transparent flex flex-col">
       <Navbar />
       <div className="h-20 shrink-0" />
 
@@ -141,13 +154,13 @@ function LocationsPageContent() {
         {/* Page Header */}
         <div className="w-full max-w-2xl text-center mb-6 mx-auto flex flex-col items-center">
           <p className="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">
-            {t("networkBadge")}
+            Our Bengaluru Network
           </p>
           <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 mb-3">
-            {t("clinicsTitle")}
+            Partner Clinics in Bengaluru
           </h1>
           <p className="text-slate-500 text-base leading-relaxed max-w-[620px] mx-auto">
-            {t("clinicsDesc")}
+            Discover top-tier independent medical centers. Select a clinic to view operational hours, address, and live routing.
           </p>
         </div>
 
@@ -157,11 +170,11 @@ function LocationsPageContent() {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-all duration-200 cursor-pointer ${
+              className={\`px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-all duration-200 cursor-pointer \${
                 activeCategory === cat.id
                   ? "bg-teal-600 text-white shadow-md border border-teal-600"
                   : "bg-white text-slate-500 border border-slate-200 hover:text-slate-800 hover:bg-slate-50"
-              }`}
+              }\`}
             >
               {cat.label}
             </button>
@@ -172,7 +185,7 @@ function LocationsPageContent() {
         <div className="w-full max-w-6xl mx-auto mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
           <input
             type="text"
-            placeholder={t("searchPlaceholder")}
+            placeholder="Search neighborhood or clinic..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm text-slate-700 bg-white shadow-sm"
@@ -183,9 +196,9 @@ function LocationsPageContent() {
             onChange={(e) => setSortOption(e.target.value)}
             className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm text-slate-700 bg-white shadow-sm cursor-pointer"
           >
-            <option value="distance">{t("sortDistance")}</option>
-            <option value="popularity">{t("sortPopularity")}</option>
-            <option value="rating">{t("sortRating")}</option>
+            <option value="distance">Sort by Distance (Nearest First)</option>
+            <option value="popularity">Sort by Popularity (Highest Rated First)</option>
+            <option value="rating">Sort by Rating (Top Rated First)</option>
           </select>
 
           <button
@@ -195,7 +208,7 @@ function LocationsPageContent() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <polygon points="3 11 22 2 13 21 11 13 3 11"/>
             </svg>
-            {t("findNearMe")}
+            Find Near Me
           </button>
         </div>
 
@@ -206,7 +219,7 @@ function LocationsPageContent() {
           <div className="lg:col-span-1 w-full bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden h-[600px] flex flex-col">
             <div className="p-4 border-b border-slate-100 bg-slate-50 shrink-0">
               <h3 className="text-sm font-bold text-slate-800">
-                {processedClinics.length} {t("clinicsFound")}
+                {processedClinics.length} Clinics Found
               </h3>
             </div>
             <div className="flex-1 overflow-y-auto p-2">
@@ -219,11 +232,11 @@ function LocationsPageContent() {
                         setSelectedClinicId(c.id);
                         setShowReviews(false);
                       }}
-                      className={`text-left w-full p-4 rounded-2xl transition-all cursor-pointer border ${
+                      className={\`text-left w-full p-4 rounded-2xl transition-all cursor-pointer border \${
                         selectedClinicId === c.id
                           ? "bg-teal-50 border-teal-200 shadow-sm"
                           : "bg-white border-transparent hover:bg-slate-50 hover:border-slate-200"
-                      }`}
+                      }\`}
                     >
                       <div className="flex justify-between items-start mb-1">
                         <h4 className="font-semibold text-slate-900 text-sm line-clamp-1 pr-2">{c.name}</h4>
@@ -281,7 +294,7 @@ function LocationsPageContent() {
                           <circle cx="12" cy="10" r="3" />
                         </svg>
                         <div>
-                          <strong className="text-sm font-semibold text-slate-700">{t("address")}</strong>
+                          <strong className="text-sm font-semibold text-slate-700">Address</strong>
                           <p className="text-sm text-slate-500 mt-0.5">{currentClinic.address}</p>
                         </div>
                       </div>
@@ -292,7 +305,7 @@ function LocationsPageContent() {
                           <polyline points="12 6 12 12 16 14" />
                         </svg>
                         <div>
-                          <strong className="text-sm font-semibold text-slate-700">{t("operatingHours")}</strong>
+                          <strong className="text-sm font-semibold text-slate-700">Operating Hours</strong>
                           <p className="text-sm text-slate-500 mt-0.5">{currentClinic.operatingHours}</p>
                         </div>
                       </div>
@@ -302,7 +315,7 @@ function LocationsPageContent() {
                           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.84.36 1.65.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.16.34 1.97.57 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
                         <div>
-                          <strong className="text-sm font-semibold text-slate-700">{t("phone")}</strong>
+                          <strong className="text-sm font-semibold text-slate-700">Phone</strong>
                           <p className="text-sm text-slate-500 mt-0.5">{currentClinic.phone}</p>
                         </div>
                       </div>
@@ -315,9 +328,9 @@ function LocationsPageContent() {
                       onClick={() => setShowReviews(!showReviews)}
                       className="text-sm font-semibold text-teal-600 hover:text-teal-700 flex items-center gap-2 cursor-pointer transition-colors"
                     >
-                      {showReviews ? t("hideReviews") : t("readReviews")} ({currentClinic.reviewCount})
+                      {showReviews ? 'Hide' : 'Read'} Patient Reviews ({currentClinic.reviewCount})
                       <svg
-                        className={`transition-transform duration-200 ${showReviews ? 'rotate-180' : ''}`}
+                        className={\`transition-transform duration-200 \${showReviews ? 'rotate-180' : ''}\`}
                         width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                       >
                         <polyline points="6 9 12 15 18 9" />
@@ -349,7 +362,7 @@ function LocationsPageContent() {
                         onClick={handleGetRoute}
                         className="w-full py-3.5 bg-teal-600 text-white text-sm font-semibold rounded-full hover:bg-teal-700 transition-colors cursor-pointer"
                       >
-                        {t("getRoute")}
+                        Get Route &amp; Directions
                       </button>
                     )}
                     {geoStatus === "acquiring" && (
@@ -377,7 +390,7 @@ function LocationsPageContent() {
                 {/* Right Map Embed */}
                 <div className="w-full h-[460px] rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
                   <iframe
-                    title={`Map of ${currentClinic.name}`}
+                    title={\`Map of \${currentClinic.name}\`}
                     src={currentClinic.mapUrl}
                     width="100%"
                     height="100%"
@@ -409,3 +422,6 @@ export default function LocationsPage() {
     </Suspense>
   );
 }
+`;
+
+fs.writeFileSync('app/locations/page.tsx', tsxContent);

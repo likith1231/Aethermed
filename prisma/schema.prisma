@@ -1,0 +1,117 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  password      String?
+  role          String    @default("patient") // patient, doctor, admin
+  phone         String?
+  clinicId      String?
+  clinic        Clinic?   @relation("ClinicDoctors", fields: [clinicId], references: [id])
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt @default(now())
+  bookings      Booking[] @relation("PatientBookings")
+  staffBookings Booking[] @relation("StaffBookings")
+  healthRecords HealthRecord[]
+  authoredRecords HealthRecord[] @relation("DoctorRecords")
+  leaves        DoctorLeave[]
+  notifications Notification[]
+}
+
+model Clinic {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  address   String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt @default(now())
+  bookings  Booking[]
+  slotConfig SlotConfig?
+  doctors   User[]    @relation("ClinicDoctors")
+  leaves    DoctorLeave[]
+}
+
+model SlotConfig {
+  id          String   @id @default(cuid())
+  clinicId    String   @unique
+  clinic      Clinic   @relation(fields: [clinicId], references: [id])
+  startTime   String   @default("09:00") // 24h format HH:mm
+  endTime     String   @default("17:00") // 24h format HH:mm
+  lunchStartTime String?
+  lunchEndTime   String?
+  slotDuration Int     @default(30) // in minutes
+  maxPerSlot  Int      @default(3) // how many bookings per slot before full
+}
+
+model Booking {
+  id               String   @id @default(cuid())
+  clinicId         String
+  clinic           Clinic   @relation(fields: [clinicId], references: [id])
+  patientId        String
+  patient          User     @relation("PatientBookings", fields: [patientId], references: [id])
+  patientName      String
+  email            String?
+  phone            String?
+  userToken        Int
+  timeInput        String
+  status           String   @default("Pending") // Pending, In Cabin, Processed
+  assignedStaffId  String?
+  assignedStaff    User?    @relation("StaffBookings", fields: [assignedStaffId], references: [id])
+  isTelemedicine   Boolean  @default(false)
+  telemedicineLink String?
+  consultFee       Float?
+  diagFee          Float?
+  pharmacyFee      Float?
+  healthRecord     HealthRecord?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt @default(now())
+}
+
+model HealthRecord {
+  id            String    @id @default(cuid())
+  patientId     String
+  patient       User      @relation(fields: [patientId], references: [id])
+  doctorId      String?
+  doctor        User?     @relation("DoctorRecords", fields: [doctorId], references: [id])
+  bookingId     String?   @unique
+  booking       Booking?  @relation(fields: [bookingId], references: [id])
+  diagnosis     String?
+  prescription  String?
+  notes         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt @default(now())
+}
+
+model DoctorLeave {
+  id        String   @id @default(cuid())
+  doctorId  String
+  doctor    User     @relation(fields: [doctorId], references: [id])
+  clinicId  String
+  clinic    Clinic   @relation(fields: [clinicId], references: [id])
+  date      String   // YYYY-MM-DD
+  startTime String?  // HH:mm, null for full day
+  endTime   String?  // HH:mm, null for full day
+  reason    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt @default(now())
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  patientId String
+  patient   User     @relation(fields: [patientId], references: [id])
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

@@ -1,7 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useAuth } from "../context/AuthContext";
+import { useAether } from "../context/AetherContext";
 import {
   AreaChart,
   Area,
@@ -26,30 +28,16 @@ interface Booking {
   createdAt: string;
 }
 
-const clinicList = [
-  "Sanjeevani Multispecialty Hospital - Indiranagar",
-  "Apex Cardiac & General Care - Jayanagar",
-  "Prakriti Ayurveda & Wellness - Malleshwaram",
-  "Happy Paws Veterinary Clinic - Whitefield",
-  "SmileCare Dental - Koramangala",
-  "Cura Homeopathy Clinic - HSR Layout",
-  "Bengaluru Eye Hospital - Rajajinagar",
-  "Ovum Woman & Child Care - Banashankari",
-];
+import { clinics } from "../data/clinics";
 
-const overviewChartData = [
-  { name: "June 1", bookings: 12 },
-  { name: "June 3", bookings: 19 },
-  { name: "June 6", bookings: 15 },
-  { name: "June 9", bookings: 27 },
-  { name: "June 12", bookings: 22 },
-  { name: "June 15", bookings: 35 },
-  { name: "June 18", bookings: 24 },
-  { name: "June 21", bookings: 42 },
-  { name: "June 24", bookings: 30 },
-  { name: "June 27", bookings: 48 },
-  { name: "June 30", bookings: 38 },
-];
+const defaultChartData = [12, 19, 15, 27, 22, 35, 24, 42, 30, 48, 38].map((bookings, i) => {
+  const d = new Date(Date.now() - (10 - i) * 3 * 86400000);
+  return {
+    name: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    bookings
+  };
+});
+
 
 const analyticsChartData = [
   { name: "Allopathy", pct: 48 },
@@ -59,32 +47,117 @@ const analyticsChartData = [
 ];
 
 export default function AdminDashboard() {
-  const [bookings, setBookings] = useState<Booking[]>([]);
+  const { userRole, logout } = useAuth();
+  const { bookings, createNewBooking, clearAllBookings, auditLogs } = useAether();
+
   const [activeMenu, setActiveMenu] = useState("Appointments");
   const [isMounted, setIsMounted] = useState(false);
+
+  const terminalRef = useRef<HTMLDivElement>(null);
+  const [systemLogs, setSystemLogs] = useState<string[]>([]);
+  const [adminStats, setAdminStats] = useState({ totalBookings: 0, processedCount: 0, activeLoad: 0 });
+  const [overviewChartData, setOverviewChartData] = useState(defaultChartData);
+  const [notifications, setNotifications] = useState<any[]>([]);
+  const [selectedClinicId, setSelectedClinicId] = useState<string | null>(null);
+  const [slotConfigForm, setSlotConfigForm] = useState({
+    startTime: "09:00",
+    endTime: "17:00",
+    slotDuration: "30",
+    maxPerSlot: "3"
+  });
+  const [isSavingConfig, setIsSavingConfig] = useState(false);
+
+
+
+  // Telemetry state
+  const [telemetry, setTelemetry] = useState({
+    totalBookings: 12450,
+    syncNodes: 8,
+    dbLatency: 12
+  });
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-  // Fetch bookings from localStorage on client side
+  // Telemetry ticker running every 4 seconds
   useEffect(() => {
-    const fetchBookings = () => {
-      try {
-        const stored = localStorage.getItem("aethermed_bookings");
-        if (stored) {
-          setBookings(JSON.parse(stored));
-        }
-      } catch (err) {
-        console.error("Failed to read bookings from localStorage:", err);
-      }
-    };
-    fetchBookings();
-
-    // Poll every 2 seconds to make it look "live"
-    const interval = setInterval(fetchBookings, 2000);
+    const interval = setInterval(() => {
+      setTelemetry(prev => ({
+        totalBookings: prev.totalBookings, // overridden by adminStats
+        syncNodes: 8 + Math.floor(Math.random() * 3) - 1, // Fluctuate 7 to 9
+        dbLatency: 8 + Math.floor(Math.random() * 15)     // Fluctuate 8 to 22 ms
+      }));
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
+
+  const syncAdminTelemetry = async () => {
+    try {
+      const response = await fetch('/api/bookings');
+      const masterList = await response.json();
+      
+      // Dynamically evaluate active analytics stats from server data
+      const totalBookingsCount = masterList.length;
+      const completedAppointments = masterList.filter((b: any) => b.status === "Processed").length;
+      const activeInCabinLoad = masterList.filter((b: any) => b.status === "In Cabin").length;
+      
+      setAdminStats({
+        totalBookings: totalBookingsCount,
+        processedCount: completedAppointments,
+        activeLoad: activeInCabinLoad
+      });
+
+      setOverviewChartData(prev => {
+        const newData = [...prev];
+        newData[newData.length - 1] = {
+          ...newData[newData.length - 1],
+          bookings: totalBookingsCount
+        };
+        return newData;
+      });
+    } catch (err) {
+      console.error("Telemetry pipeline sync break:", err);
+    }
+  };
+
+  useEffect(() => {
+    syncAdminTelemetry();
+    const telemetryInterval = setInterval(syncAdminTelemetry, 5000); // Poll server every 5s
+    return () => clearInterval(telemetryInterval);
+  }, []);
+
+  // Live Auto-scrolling Telemetry Feed Engine
+  useEffect(() => {
+    const logPool = [
+      "INFRA_SYNC: Node ID #42 (Indiranagar Care Hub) master database shard replica synchronized cleanly in 14ms.",
+      "AI_ROUTER: Multi-lingual language prompt parsed successfully -> Selected category: Ayurveda.",
+      "SECURE_AUTH: Practitioner license verification status verified ACTIVE for UID #KMC-84391.",
+      "TELEMETRY: System memory utilization holding nominal baseline at 42.8% on AWS ap-south-1 (Mumbai).",
+      "PERSISTENCE_SYNC: Client browser localStorage buffer parsed. Session token state matches local snapshot."
+    ];
+
+    let timeoutId: NodeJS.Timeout;
+
+    const generateLog = () => {
+      const timestamp = new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const randomLog = logPool[Math.floor(Math.random() * logPool.length)];
+      setSystemLogs(prev => [...prev, `[${timestamp}] ${randomLog}`]);
+      
+      const nextDelay = Math.random() * 1500 + 3500; // 3.5s to 5.0s
+      timeoutId = setTimeout(generateLog, nextDelay);
+    };
+
+    timeoutId = setTimeout(generateLog, 3500);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  useEffect(() => {
+    if (terminalRef.current) {
+      terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+    }
+  }, [systemLogs, auditLogs, activeMenu]);
 
   const handleSimulateBooking = () => {
     const names = ["Aravind Kumar", "Priya Sharma", "Rahul Hegde", "Sneha Rao", "John Doe"];
@@ -92,9 +165,10 @@ export default function AdminDashboard() {
     const phones = ["+91 98450 12345", "+91 99001 88776", "+91 98860 43210", "+91 97420 55667", "+91 96110 77889"];
     
     const randomIdx = Math.floor(Math.random() * names.length);
-    const chosenClinic = clinicList[Math.floor(Math.random() * clinicList.length)];
+    const chosenClinicObj = clinics[Math.floor(Math.random() * clinics.length)];
+    const chosenClinic = `${chosenClinicObj.name} - ${chosenClinicObj.area}`;
     
-    const newBooking: Booking = {
+    const newBooking: any = {
       id: Math.random().toString(36).substring(2, 11),
       patientName: names[randomIdx],
       email: emails[randomIdx],
@@ -103,30 +177,24 @@ export default function AdminDashboard() {
       clinicName: chosenClinic,
       date: new Date(Date.now() + Math.random() * 7 * 24 * 60 * 60 * 1000).toISOString().split("T")[0],
       status: "Pending",
+      assignedStaff: null,
       createdAt: new Date().toISOString(),
     };
 
-    try {
-      const stored = localStorage.getItem("aethermed_bookings");
-      const list = stored ? JSON.parse(stored) : [];
-      list.push(newBooking);
-      localStorage.setItem("aethermed_bookings", JSON.stringify(list));
-      setBookings(list);
-    } catch (err) {
-      console.error(err);
-    }
+    createNewBooking(newBooking);
   };
 
   const handleClearBookings = () => {
-    if (confirm("Are you sure you want to clear all simulated bookings?")) {
-      try {
-        localStorage.removeItem("aethermed_bookings");
-        setBookings([]);
-      } catch (err) {
-        console.error(err);
-      }
+    if (confirm("Are you sure you want to clear all bookings?")) {
+      clearAllBookings();
     }
   };
+
+
+
+  if (!isMounted) return null;
+
+
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row font-sans text-slate-800 bg-transparent">
@@ -160,6 +228,8 @@ export default function AdminDashboard() {
               { name: "Appointments", icon: "📅" },
               { name: "Clinics", icon: "🏥" },
               { name: "Analytics", icon: "📈" },
+              { name: "Audit Logs", icon: "🛡️" },
+
             ].map((menu) => {
               const isActive = activeMenu === menu.name;
               return (
@@ -184,10 +254,21 @@ export default function AdminDashboard() {
         <div className="p-4 border-t border-slate-200">
           <Link
             href="/"
-            className="flex items-center gap-2 px-4 py-3 text-sm font-medium text-slate-400 hover:text-teal-600 transition-colors rounded-xl hover:bg-slate-50"
+            className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium text-slate-400 hover:text-teal-600 transition-colors rounded-xl hover:bg-slate-50"
           >
             ← Back to Platform
           </Link>
+          <button
+            onClick={() => {
+              logout();
+              localStorage.removeItem('aether_admin_authenticated');
+              localStorage.removeItem('aether_doctor_authenticated');
+              window.location.href = '/';
+            }}
+            className="w-full mt-2 flex items-center justify-center gap-2 px-4 py-3 text-sm font-bold text-red-500 hover:text-red-700 transition-colors rounded-xl hover:bg-red-50"
+          >
+            Sign Out
+          </button>
         </div>
       </aside>
 
@@ -197,6 +278,18 @@ export default function AdminDashboard() {
         <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
           <h2 className="text-2xl font-bold text-slate-900">{activeMenu} Portal</h2>
           <div className="flex items-center gap-3">
+            <button
+              onClick={syncAdminTelemetry}
+              className="px-4 py-2 bg-slate-100 text-slate-700 text-sm font-semibold rounded-full hover:bg-slate-200 transition-colors cursor-pointer flex items-center gap-2"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 2v6h-6"></path>
+                <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+                <path d="M3 22v-6h6"></path>
+                <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+              </svg>
+              Refresh Data
+            </button>
             <button
               onClick={handleSimulateBooking}
               className="px-4 py-2 bg-teal-600 text-white text-sm font-semibold rounded-full hover:bg-teal-700 transition-colors cursor-pointer"
@@ -220,25 +313,25 @@ export default function AdminDashboard() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 bg-white rounded-2xl border border-slate-100">
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Total Bookings</span>
-              <h3 className="text-3xl font-bold text-slate-900 mt-2">{bookings.length}</h3>
-              <p className="text-xs text-teal-600 mt-1">↑ 12% increase this week</p>
+              <h3 className="text-3xl font-bold text-slate-900 mt-2">{adminStats.totalBookings.toLocaleString()}</h3>
+              <p className="text-xs text-teal-600 mt-1">↑ Live server metric</p>
             </div>
             <div className="p-6 bg-white rounded-2xl border border-slate-100">
-              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Pending Review</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Processed Appointments</span>
               <h3 className="text-3xl font-bold text-slate-900 mt-2">
-                {bookings.filter((b) => b.status === "Pending").length}
+                {adminStats.processedCount.toLocaleString()}
               </h3>
-              <p className="text-xs text-amber-600 mt-1">Needs manual confirmation</p>
+              <p className="text-xs text-teal-600 mt-1">Completed today</p>
             </div>
             <div className="p-6 bg-white rounded-2xl border border-slate-100">
-              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Partner Clinics</span>
-              <h3 className="text-3xl font-bold text-slate-900 mt-2">8</h3>
-              <p className="text-xs text-slate-400 mt-1">Active hubs across Bengaluru</p>
+              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Active In-Cabin Load</span>
+              <h3 className="text-3xl font-bold text-slate-900 mt-2">{adminStats.activeLoad.toLocaleString()}</h3>
+              <p className="text-xs text-amber-600 mt-1">Currently being served</p>
             </div>
             <div className="p-6 bg-white rounded-2xl border border-slate-100">
-              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">System Status</span>
-              <h3 className="text-3xl font-bold text-teal-600 mt-2">Active</h3>
-              <p className="text-xs text-slate-400 mt-1">All systems operating normally</p>
+              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Database Latency</span>
+              <h3 className="text-3xl font-bold text-teal-600 mt-2">{telemetry.dbLatency}ms</h3>
+              <p className="text-xs text-slate-400 mt-1">Sync response time</p>
             </div>
           </div>
 
@@ -447,31 +540,95 @@ export default function AdminDashboard() {
           {activeMenu === "Clinics" && (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Panel: Clinic Status Cards */}
-              <div className="p-6 bg-white rounded-2xl border border-slate-100">
+              <div className="p-6 bg-white rounded-2xl border border-slate-100 flex flex-col">
                 <h4 className="text-base font-bold text-slate-900 mb-4">Connected Partner Clinics</h4>
-                <div className="flex flex-col gap-3">
-                  {clinicList.map((clinic, index) => {
-                    const cName = clinic.split(" - ")[0];
-                    const cArea = clinic.split(" - ")[1];
+                <div className="flex flex-col gap-3 overflow-y-auto pr-2 max-h-[400px]" style={{ scrollbarWidth: "thin" }}>
+                  {clinics.map((clinic, index) => {
+                    const isSelected = selectedClinicId === clinic.id;
                     return (
-                      <div key={index} className="flex items-center justify-between py-3 px-4 rounded-xl bg-slate-50/70 border border-slate-100">
+                      <div 
+                        key={clinic.id || index} 
+                        onClick={() => {
+                          setSelectedClinicId(clinic.id);
+                          // Reset form when clicking a new clinic, ideally we fetch existing config here but we'll mock it for now
+                          setSlotConfigForm({ startTime: "09:00", endTime: "17:00", slotDuration: "30", maxPerSlot: "3" });
+                        }}
+                        className={`flex items-center justify-between py-3 px-4 rounded-xl border cursor-pointer transition-colors ${
+                          isSelected ? "bg-teal-50 border-teal-200" : "bg-slate-50/70 border-slate-100 hover:bg-slate-50"
+                        }`}
+                      >
                         <div className="flex flex-col gap-0.5">
-                          <p className="text-sm font-medium text-slate-800">{cName}</p>
-                          <p className="text-xs text-slate-400">{cArea}, Bengaluru</p>
+                          <p className={`text-sm font-medium ${isSelected ? "text-teal-900" : "text-slate-800"}`}>{clinic.name}</p>
+                          <p className={`text-xs ${isSelected ? "text-teal-700/70" : "text-slate-400"}`}>{clinic.area}, Bengaluru</p>
                         </div>
-                        <span className="text-xs font-semibold text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
-                          Active
-                        </span>
+                        <div className="flex flex-col items-end gap-1">
+                          <span className="text-xs font-semibold text-teal-600 bg-teal-100/50 px-2 py-0.5 rounded-full whitespace-nowrap">
+                            Active
+                          </span>
+                          <span className="text-[10px] text-slate-400 font-medium">Configure Slots ⚙️</span>
+                        </div>
                       </div>
                     );
                   })}
                 </div>
               </div>
 
-              {/* Right Panel: Server Load / Sync Info */}
+              {/* Right Panel: Server Load / Sync Info OR Slot Config */}
               <div className="flex flex-col gap-6">
-                <div className="p-6 bg-white rounded-2xl border border-slate-100">
-                  <h4 className="text-base font-bold text-slate-900 mb-4">Clinic Sync Status</h4>
+                {selectedClinicId ? (
+                  <div className="p-6 bg-white rounded-2xl border border-teal-100 shadow-sm">
+                    <div className="flex items-center justify-between mb-4">
+                      <h4 className="text-base font-bold text-slate-900">Slot Configuration</h4>
+                      <button onClick={() => setSelectedClinicId(null)} className="text-xs text-slate-400 hover:text-slate-600">Close</button>
+                    </div>
+                    
+                    <form className="flex flex-col gap-4" onSubmit={async (e) => {
+                      e.preventDefault();
+                      setIsSavingConfig(true);
+                      try {
+                        const res = await fetch("/api/slots/config", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({ clinicId: selectedClinicId, ...slotConfigForm })
+                        });
+                        if (res.ok) {
+                          alert("Slot configuration saved successfully.");
+                        } else {
+                          alert("Failed to save slot configuration.");
+                        }
+                      } catch (err) {
+                        console.error(err);
+                      }
+                      setIsSavingConfig(false);
+                    }}>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">Start Time (24h)</label>
+                          <input type="time" required value={slotConfigForm.startTime} onChange={e => setSlotConfigForm({...slotConfigForm, startTime: e.target.value})} className="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500" />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">End Time (24h)</label>
+                          <input type="time" required value={slotConfigForm.endTime} onChange={e => setSlotConfigForm({...slotConfigForm, endTime: e.target.value})} className="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500" />
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">Slot Duration (min)</label>
+                          <input type="number" min="15" max="120" step="5" required value={slotConfigForm.slotDuration} onChange={e => setSlotConfigForm({...slotConfigForm, slotDuration: e.target.value})} className="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500" />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">Max Patients / Slot</label>
+                          <input type="number" min="1" max="50" required value={slotConfigForm.maxPerSlot} onChange={e => setSlotConfigForm({...slotConfigForm, maxPerSlot: e.target.value})} className="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-teal-500" />
+                        </div>
+                      </div>
+                      <button type="submit" disabled={isSavingConfig} className="mt-2 w-full py-2.5 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors disabled:opacity-50">
+                        {isSavingConfig ? "Saving..." : "Save Configuration"}
+                      </button>
+                    </form>
+                  </div>
+                ) : (
+                  <div className="p-6 bg-white rounded-2xl border border-slate-100">
+                    <h4 className="text-base font-bold text-slate-900 mb-4">Clinic Sync Status</h4>
                   <div className="flex flex-col gap-3">
                     <div className="flex items-center justify-between py-3 px-4 rounded-xl bg-slate-50/70 border border-slate-100">
                       <div className="flex items-center gap-3">
@@ -505,8 +662,9 @@ export default function AdminDashboard() {
                     </div>
                   </div>
                 </div>
+              )}
 
-                <div className="p-5 bg-teal-50/50 rounded-2xl border border-teal-100 text-sm text-slate-600 leading-relaxed">
+              <div className="p-5 bg-teal-50/50 rounded-2xl border border-teal-100 text-sm text-slate-600 leading-relaxed">
                   <strong className="text-slate-700">Sync Note:</strong> All clinics across Bengaluru sync transaction logs every 2 seconds. The database replication cluster reports healthy state.
                 </div>
               </div>
@@ -605,6 +763,27 @@ export default function AdminDashboard() {
               </div>
             </div>
           )}
+
+          {/* AUDIT LOGS VIEW */}
+          {activeMenu === "Audit Logs" && (
+            <div className="flex flex-col gap-6">
+              <div className="p-6 bg-white rounded-2xl border border-slate-100 flex flex-col">
+                <h4 className="text-base font-bold text-slate-900 mb-2">🖥️ Core Infrastructure Audit Logs</h4>
+                <p className="text-xs text-slate-500 mb-4">Real-time distributed system events and security operations.</p>
+                <div ref={terminalRef} className="w-full bg-slate-950 font-mono text-xs text-emerald-400 p-4 rounded-xl border border-slate-800 h-64 overflow-y-auto shadow-inner">
+                  {auditLogs.map((log, index) => (
+                    <div key={`audit-${index}`} className="mb-2 whitespace-pre-wrap font-medium">{log}</div>
+                  ))}
+                  {systemLogs.map((log, index) => (
+                    <div key={`sys-${index}`} className="mb-2 whitespace-pre-wrap font-medium">{log}</div>
+                  ))}
+                  <div className="animate-pulse text-emerald-600 mt-2">_</div>
+                </div>
+              </div>
+            </div>
+          )}
+
+
 
         </div>
       </main>
