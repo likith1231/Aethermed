@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '../../lib/prisma';
+import { todayInClinicTimezone, currentClinicMinutesSinceMidnight } from '../../lib/timezone';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -108,11 +109,10 @@ export async function GET(request: Request) {
         }
       }
 
-      // Past slot filtering
-      const now = new Date();
-      const todayStr = `${now.getFullYear()}-${(now.getMonth() + 1).toString().padStart(2, '0')}-${now.getDate().toString().padStart(2, '0')}`;
+      // Past slot filtering — uses IST-aware helpers so this works on Vercel (UTC) too
+      const todayStr = todayInClinicTimezone();
       const isToday = dateStr === todayStr;
-      const nowTotalMins = now.getHours() * 60 + now.getMinutes();
+      const nowTotalMins = currentClinicMinutesSinceMidnight();
       const isPast = isToday && slotMins <= nowTotalMins;
 
       const isFull = isLeave || isLunch || isPast || taken >= config.maxPerSlot;

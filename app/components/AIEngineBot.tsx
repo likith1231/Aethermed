@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useLanguage } from "../context/LanguageContext";
 import { useAether } from "../context/AetherContext";
 import { clinics } from "../data/clinics";
+import { todayInClinicTimezone, tomorrowInClinicTimezone } from "../lib/timezone";
 
 type Message = {
   id: string;
@@ -223,12 +224,8 @@ Reply with 'Yes' to confirm or 'Cancel' to stop.`);
         setTempBookingData(prev => ({ ...prev, consultType }));
         setBookingState('collecting_date');
         
-        const today = new Date();
-        const tomorrow = new Date(today);
-        tomorrow.setDate(tomorrow.getDate() + 1);
-        
-        const todayStr = today.toISOString().split('T')[0];
-        const tomorrowStr = tomorrow.toISOString().split('T')[0];
+        const todayStr = todayInClinicTimezone();
+        const tomorrowStr = tomorrowInClinicTimezone();
         
         addMessage("ai", `Got it, ${consultType}. What date would you prefer?`, [
           { label: "Today", value: todayStr },
@@ -240,11 +237,9 @@ Reply with 'Yes' to confirm or 'Cancel' to stop.`);
 
       if (bookingState === 'collecting_date') {
         let dateStr = userText;
-        if (lowerInput === "today") dateStr = new Date().toISOString().split('T')[0];
+        if (lowerInput === "today") dateStr = todayInClinicTimezone();
         else if (lowerInput === "tomorrow") {
-          const tmr = new Date();
-          tmr.setDate(tmr.getDate() + 1);
-          dateStr = tmr.toISOString().split('T')[0];
+          dateStr = tomorrowInClinicTimezone();
         }
         
         // Basic validation of date string YYYY-MM-DD
@@ -266,8 +261,8 @@ Reply with 'Yes' to confirm or 'Cancel' to stop.`);
           
           if (availableSlots.length === 0) {
             addMessage("ai", `I'm sorry, there are no available slots on ${dateStr}. Please choose another date.`, [
-              { label: "Today", value: new Date().toISOString().split('T')[0] },
-              { label: "Tomorrow", value: new Date(Date.now() + 86400000).toISOString().split('T')[0] }
+              { label: "Today", value: todayInClinicTimezone() },
+              { label: "Tomorrow", value: tomorrowInClinicTimezone() }
             ]);
             // STAY in collecting_date
             setIsTyping(false);

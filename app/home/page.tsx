@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useLanguage } from "../context/LanguageContext";
 import { useAether } from "../context/AetherContext";
+import { todayInClinicTimezone } from "../lib/timezone";
 
 /* ── Specialty categories dynamic mock data ── */
 type Specialty = {
@@ -576,7 +577,7 @@ export default function Home() {
                     id="appointment-time"
                     type="date"
                     required
-                    min={new Date().toISOString().split('T')[0]}
+                    min={todayInClinicTimezone()}
                     value={bookingFormData.date}
                     onChange={(e) => updateBookingFormData({ date: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 transition-all bg-slate-50/50"
