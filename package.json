@@ -9,6 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@opentelemetry/api": "^1.9.1",
+    "@opentelemetry/auto-instrumentations-node": "^0.78.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.220.0",
+    "@opentelemetry/sdk-node": "^0.220.0",
     "@prisma/client": "^6.19.3",
     "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "^10.7.7",
