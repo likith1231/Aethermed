@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aethermed-config
+  namespace: resilientcommerce
+data:
+  NODE_ENV: "production"
+  # NEXTAUTH_URL must match wherever this Service is actually reachable from.
+  # Local Kind + port-forward: http://localhost:3000
+  # Once behind the ALB in the real AWS demo: the ALB's DNS name / your domain.
+  NEXTAUTH_URL: "http://localhost:3000"

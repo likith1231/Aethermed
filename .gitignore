@@ -33,6 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# real k8s secret manifests — only secret.example.yaml (no real values) is tracked
+k8s/secret.yaml
+
 # vercel
 .vercel
 

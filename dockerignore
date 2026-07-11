@@ -1,0 +1,35 @@
+# Dependencies & build artifacts (reinstalled/rebuilt inside the image)
+node_modules
+.next
+app/generated
+
+# Secrets — never bake these into an image; inject at runtime via
+# K8s Secrets / Terraform-provisioned AWS Secrets Manager instead
+.env
+.env*
+!.env.example
+
+# Local SQLite leftovers — the real datasource is Postgres (DATABASE_URL)
+prisma/dev.db
+dev.db
+
+# Dev-only scratch files found in this repo — not part of the app
+test*.ts
+test*.js
+scratch*.js
+refactor_*.py
+extract_clinics.py
+fix_locations.py
+CREDENTIALS.md
+tsconfig.tsbuildinfo
+
+# VCS / editor / OS noise
+.git
+.gitignore
+.vscode
+.DS_Store
+
+# Docs not needed inside the image
+README.md
+CLAUDE.md
+AGENTS.md
