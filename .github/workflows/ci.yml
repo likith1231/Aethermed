@@ -44,3 +44,12 @@ jobs:
                   tags: aethermed:latest
                   cache-from: type=gha
                   cache-to: type=gha,mode=max
+
+            - name: Run Trivy vulnerability scanner
+              uses: aquasecurity/trivy-action@v0.36.0
+              with:
+                  image-ref: "aethermed:latest"
+                  format: "table"
+                  exit-code: "0"
+                  ignore-unfixed: true
+                  vuln-type: "os,library"
