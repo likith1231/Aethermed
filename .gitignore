@@ -60,3 +60,4 @@ next-env.d.ts
 
 # Credentials
 CREDENTIALS.md
+scripts/seed-credentials.js
