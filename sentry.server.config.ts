@@ -13,6 +13,11 @@ Sentry.init({
   // Enable logs to be sent to Sentry
   enableLogs: true,
 
+  // Skip Sentry's own OpenTelemetry setup — our instrumentation.ts already
+  // starts a NodeSDK for Jaeger; without this, both try to register the
+  // global OTel tracer and Sentry's registration silently blocks ours.
+  skipOpenTelemetrySetup: true,
+
   dataCollection: {
     // To disable sending user data and HTTP bodies, uncomment the lines below. For more info visit:
     // https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/options/#dataCollection
