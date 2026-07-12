@@ -33,8 +33,8 @@ spec:
           # Explicitly pointing OpenTelemetry to Jaeger inside the cluster
           # Removed /v1/traces to prevent the SDK from double-appending it
           env:
-            - name: OTEL_EXPORTER_OTLP_ENDPOINT
-              value: "http://jaeger-otlp.observability.svc.cluster.local:4318"
+  - name: OTEL_EXPORTER_OTLP_ENDPOINT
+    value: "http://jaeger-otlp.observability.svc.cluster.local:4318/v1/traces"
           # HPA cannot compute a CPU percentage without a `requests` value to
           # measure against — this is a hard prerequisite, not tuning.
           # Limits are set generously since this is a demo, not tuned prod.
