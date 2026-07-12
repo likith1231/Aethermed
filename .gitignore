@@ -57,3 +57,6 @@ next-env.d.ts
 # Terraform state
 *.tfstate
 *.tfstate.backup
+
+# Credentials
+CREDENTIALS.md
