@@ -2,11 +2,6 @@ import * as Sentry from '@sentry/nextjs';
 
 export async function register() {
   if (process.env.NEXT_RUNTIME === 'nodejs') {
-    await import('./sentry.server.config');
-
-    const { diag, DiagConsoleLogger, DiagLogLevel } = await import('@opentelemetry/api');
-    diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.DEBUG);
-
     const { NodeSDK } = await import('@opentelemetry/sdk-node');
     const { getNodeAutoInstrumentations } = await import(
       '@opentelemetry/auto-instrumentations-node'
@@ -26,6 +21,9 @@ export async function register() {
     });
 
     otelSdk.start();
+
+    // Sentry now attaches to the SDK above instead of creating its own
+    await import('./sentry.server.config');
   }
 
   if (process.env.NEXT_RUNTIME === 'edge') {
