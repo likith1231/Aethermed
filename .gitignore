@@ -53,3 +53,7 @@ next-env.d.ts
 *.tfstate
 *.tfstate.backup
 .terraform.lock.hcl
+
+# Terraform state
+*.tfstate
+*.tfstate.backup
