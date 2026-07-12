@@ -18,6 +18,10 @@ spec:
       containers:
         - name: aethermed
           image: aethermed:local
+          # IfNotPresent: this image was loaded directly into the Kind node
+          # via `kind load docker-image`, not pulled from a registry. Never
+          # use `imagePullPolicy: Always` here or the kubelet will try (and
+          # fail) to pull a non-existent "aethermed:local" from Docker Hub.
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
@@ -30,6 +34,9 @@ spec:
           env:
             - name: OTEL_EXPORTER_OTLP_ENDPOINT
               value: "http://jaeger-otlp.observability.svc.cluster.local:4318/v1/traces"
+          # HPA cannot compute a CPU percentage without a `requests` value to
+          # measure against — this is a hard prerequisite, not tuning.
+          # Limits are set generously since this is a demo, not tuned prod.
           resources:
             requests:
               cpu: "150m"
