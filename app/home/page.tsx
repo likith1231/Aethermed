@@ -199,20 +199,43 @@ export default function Home() {
   
   const [availableSlots, setAvailableSlots] = useState<{time: string, available: number, total: number, isFull: boolean, reason?: string}[]>([]);
   const [isFetchingSlots, setIsFetchingSlots] = useState(false);
+  const [slotsError, setSlotsError] = useState(false);
+  const [slotsReloadKey, setSlotsReloadKey] = useState(0);
 
   useEffect(() => {
-    if (bookingFormData.clinicName && bookingFormData.date) {
-      setIsFetchingSlots(true);
-      fetch(`/api/slots?clinicId=${encodeURIComponent(bookingFormData.clinicName)}&date=${bookingFormData.date}`)
-        .then(res => res.json())
-        .then(data => {
-          if (data.slots) setAvailableSlots(data.slots);
-          else setAvailableSlots([]);
-        })
-        .catch(console.error)
-        .finally(() => setIsFetchingSlots(false));
-    }
-  }, [bookingFormData.clinicName, bookingFormData.date]);
+    if (!bookingFormData.clinicName || !bookingFormData.date) return;
+
+    // Abort the previous request when clinic/date changes so a slower, stale
+    // response can't overwrite the slots for the current selection.
+    const controller = new AbortController();
+    setIsFetchingSlots(true);
+    setSlotsError(false);
+    setAvailableSlots([]);
+
+    // Retry once: the first query after the Neon DB auto-suspends can fail.
+    const load = async (attempt: number): Promise<void> => {
+      try {
+        const res = await fetch(
+          `/api/slots?clinicId=${encodeURIComponent(bookingFormData.clinicName)}&date=${bookingFormData.date}`,
+          { signal: controller.signal, cache: "no-store" }
+        );
+        const data = await res.json();
+        if (!res.ok || !data.slots) throw new Error(data.error || `HTTP ${res.status}`);
+        setAvailableSlots(data.slots);
+      } catch (err) {
+        if (controller.signal.aborted) return;
+        if (attempt < 1) return load(attempt + 1);
+        console.error("Failed to load slots:", err);
+        setSlotsError(true);
+      }
+    };
+
+    load(0).finally(() => {
+      if (!controller.signal.aborted) setIsFetchingSlots(false);
+    });
+
+    return () => controller.abort();
+  }, [bookingFormData.clinicName, bookingFormData.date, slotsReloadKey]);
 
   const [isMounted, setIsMounted] = useState(false);
   
@@ -591,6 +614,17 @@ export default function Home() {
                     ) : isFetchingSlots ? (
                       <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-center text-sm text-slate-500 flex justify-center items-center gap-2">
                         <span className="animate-spin">🔄</span> Fetching slots...
+                      </div>
+                    ) : slotsError ? (
+                      <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-center text-sm text-slate-500">
+                        Couldn&apos;t load slots.{" "}
+                        <button
+                          type="button"
+                          onClick={() => setSlotsReloadKey((k) => k + 1)}
+                          className="text-teal-600 font-semibold hover:underline"
+                        >
+                          Try again
+                        </button>
                       </div>
                     ) : availableSlots.length === 0 ? (
                       <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-center text-sm text-slate-500">

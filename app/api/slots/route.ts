@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '../../lib/prisma';
 import { todayInClinicTimezone, currentClinicMinutesSinceMidnight } from '../../lib/timezone';
+import { clinics as knownClinics } from '../../data/clinics';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -27,11 +28,14 @@ export async function GET(request: Request) {
       }
     });
 
-    if (!clinic) {
+    // Clinic rows are only created on first booking (see /api/bookings POST),
+    // so a listed clinic with no bookings yet has no DB row. Serve default
+    // slots for it instead of a 404, which the UI shows as "No slots available".
+    if (!clinic && !knownClinics.some(c => c.id === clinicId || c.name === clinicId)) {
       return NextResponse.json({ error: "Clinic not found" }, { status: 404 });
     }
 
-    const config = clinic.slotConfig || {
+    const config = clinic?.slotConfig || {
       startTime: "09:00",
       endTime: "17:00",
       slotDuration: 30,
@@ -66,9 +70,9 @@ export async function GET(request: Request) {
     // We should parse timeInput or check what frontend sends.
     // The frontend sends `timeInput: "${bookingFormData.date} ${bookingFormData.appointmentTimeSlot}"`
     // Let's fetch all bookings for the clinic
-    const allBookings = await prisma.booking.findMany({
-      where: { clinicId: clinic.id }
-    });
+    const allBookings = clinic
+      ? await prisma.booking.findMany({ where: { clinicId: clinic.id } })
+      : [];
     
     // Filter by date string matching
     const dateBookings = allBookings.filter((b: any) => b.timeInput && b.timeInput.includes(dateStr));
@@ -85,7 +89,7 @@ export async function GET(request: Request) {
       const slotMins = hour * 60 + parseInt(m, 10);
       
       let isLeave = false;
-      const leaves = clinic.leaves || [];
+      const leaves = clinic?.leaves || [];
       for (const leave of leaves) {
         if (!leave.startTime || !leave.endTime) {
            isLeave = true; // full day leave
@@ -100,7 +104,7 @@ export async function GET(request: Request) {
       }
 
       let isLunch = false;
-      const slotConfig = clinic.slotConfig;
+      const slotConfig = clinic?.slotConfig;
       if (slotConfig && slotConfig.lunchStartTime && slotConfig.lunchEndTime) {
         const lunchStartMins = parseInt(slotConfig.lunchStartTime.split(':')[0]) * 60 + parseInt(slotConfig.lunchStartTime.split(':')[1]);
         const lunchEndMins = parseInt(slotConfig.lunchEndTime.split(':')[0]) * 60 + parseInt(slotConfig.lunchEndTime.split(':')[1]);
