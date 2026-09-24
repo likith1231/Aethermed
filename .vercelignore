@@ -8,7 +8,6 @@ scripts/
 CREDENTIALS.md
 AGENTS.md
 CLAUDE.md
-clinics_data.json
 dev.db
 test-*.js
 test-*.ts
