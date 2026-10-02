@@ -61,3 +61,6 @@ next-env.d.ts
 # Credentials
 CREDENTIALS.md
 scripts/seed-credentials.js
+
+# Oracle deployment settings (real secrets)
+deploy/oracle/oracle.env
