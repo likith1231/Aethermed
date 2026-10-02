@@ -9,6 +9,10 @@ spec:
     repoURL: 'https://github.com/likith1231/Aethermed.git'
     targetRevision: main
     path: k8s
+    directory:
+      # The example Secret holds REPLACE_ME placeholders; syncing it would overwrite the real
+      # secret (and selfHeal would keep reverting it). This Application is applied separately.
+      exclude: '{secret.example.yaml,argocd-app.yaml}'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: resilientcommerce

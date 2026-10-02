@@ -1,0 +1,15 @@
+# Exposes AetherMed on the VM at 127.0.0.1:30300 so the VM's Caddy can serve it over HTTPS.
+# Kept outside k8s/ so ArgoCD (which manages k8s/) leaves it alone.
+apiVersion: v1
+kind: Service
+metadata:
+  name: aethermed-edge
+  namespace: resilientcommerce
+spec:
+  type: NodePort
+  selector:
+    app: aethermed
+  ports:
+    - port: 80
+      targetPort: 3000
+      nodePort: 30300
