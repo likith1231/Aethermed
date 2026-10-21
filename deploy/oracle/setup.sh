@@ -62,7 +62,8 @@ base_domain() {
   echo "${ip//./-}.sslip.io"
 }
 
-# Adds a site to the VM's Caddy (run by the Orbit IDE stack) and reloads it.
+# Adds a site to the VM's Caddy and reloads it. Caddy is a container (the Orbit IDE stack) or the system
+# service installed by GhostOps's bootstrap.sh; both read /etc/caddy-sites/*.caddy.
 caddy_site() {
   local name=$1 body=$2
   sudo mkdir -p /etc/caddy-sites
@@ -72,8 +73,10 @@ caddy_site() {
   if [ -n "$caddy" ]; then
     docker exec "$caddy" caddy reload --config /etc/caddy/Caddyfile >/dev/null \
       || echo "   (Caddy reload failed; check: docker logs $caddy)"
+  elif systemctl is-active --quiet caddy; then
+    sudo systemctl reload caddy || echo "   (Caddy reload failed; check: journalctl -u caddy -n 30)"
   else
-    echo "   Caddy is not running yet. Start the Orbit IDE stack and this site will be served."
+    echo "   Caddy is not running yet. Start the Orbit IDE stack (or install Caddy) and this site will be served."
   fi
 }
 
