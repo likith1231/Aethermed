@@ -6,6 +6,8 @@
 
 *Built and tested to survive a **CoWIN-style traffic spike**, when everyone hits "Book Now" the moment slots open.*
 
+**Live:** https://aethermed.140-245-208-207.sslip.io (Kubernetes with autoscaling and ArgoCD on an Oracle Cloud Arm VM)
+
 <br/>
 
 ![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
@@ -377,6 +379,26 @@ kubectl apply -f k8s/argocd-app.yaml
 ```
 
 ArgoCD watches `k8s/` on `main`, with **automated sync, prune, and self-heal** turned on. A push to `main` gets deployed, and manual drift in the cluster gets reverted.
+
+---
+
+## ☁️ Live on Oracle Cloud (k3s)
+
+The same `k8s/` manifests run on a single Oracle Cloud Arm VM (Ubuntu 24.04, 4 OCPU, 24 GB) under k3s, shared with
+[GhostOps](https://github.com/likith1231/ghostops) and [Orbit IDE](https://github.com/likith1231/Orbit-IDE).
+One command does it (details in `deploy/oracle/setup.sh`):
+
+```bash
+cp deploy/oracle/oracle.env.example deploy/oracle/oracle.env   # DATABASE_URL (quote it: Neon URLs contain "&")
+bash deploy/oracle/setup.sh
+```
+
+It builds the image, imports it into k3s, creates the secrets, installs ArgoCD (the cluster follows `k8s/` on `main`),
+applies the HPA, and publishes `https://aethermed.<ip>.sslip.io` through the VM's Caddy.
+
+**Measured there** (150 s of traffic from one client against a server-rendered page, not the database):
+13,067 requests, 0 errors, about 87 requests/s. The HPA reported CPU above its 60% target, scaled the deployment
+**from 2 to 4 pods**, and scaled back down after the load stopped. ArgoCD reports `Synced / Healthy`.
 
 ---
 
